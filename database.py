@@ -115,9 +115,11 @@ class SearchDatabase:
             match = re.search(pattern, title)
             if match:
                 year_str = match.group()
-                # Get first year from range
-                metadata['year'] = int(re.search(r'20\d{2}', year_str).group())
-                break
+                # Get first year from range (extract 4-digit year starting with 20)
+                year_match = re.search(r'20\d{2}', year_str)
+                if year_match:
+                    metadata['year'] = int(year_match.group())
+                    break
         
         # Extract semester (Roman numerals or text)
         semester_patterns = {
@@ -268,9 +270,21 @@ class SearchDatabase:
                     WHERE content_fts MATCH ?
                 )
             """)
+            # Sanitize FTS5 special characters to prevent query errors
+            # FTS5 special chars: " ( ) - * AND OR NOT
+            sanitized_query = query.replace('"', '').replace('(', '').replace(')', '').replace('*', '')
             # Create FTS5 query with OR terms for flexibility
-            fts_query = ' OR '.join(query.split())
-            params.append(fts_query)
+            # Split on whitespace and filter empty strings
+            terms = [term.strip() for term in sanitized_query.split() if term.strip()]
+            if terms:
+                fts_query = ' OR '.join(terms)
+            else:
+                # If no valid terms after sanitization, skip FTS search
+                where_conditions.pop()
+                fts_query = None
+            
+            if fts_query:
+                params.append(fts_query)
         
         if content_type:
             where_conditions.append("content_type = ?")

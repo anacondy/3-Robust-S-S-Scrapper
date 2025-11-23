@@ -256,6 +256,17 @@ def view_pdf():
         if not pdf_url:
             return jsonify({"status": "error", "message": "URL parameter required"}), 400
         
+        # Validate URL is from trusted domain (college website)
+        allowed_domains = ['subodhpgcollege.com', 'www.subodhpgcollege.com']
+        from urllib.parse import urlparse
+        parsed_url = urlparse(pdf_url)
+        
+        if parsed_url.netloc not in allowed_domains:
+            return jsonify({
+                "status": "error", 
+                "message": "PDF URL must be from subodhpgcollege.com"
+            }), 403
+        
         pdf_handler = get_pdf_handler()
         pdf_bytes = pdf_handler.get_pdf(pdf_url, optimize=True)
         
@@ -278,6 +289,18 @@ def pdf_info():
     try:
         pdf_url = request.args.get('url')
         if not pdf_url:
+            return jsonify({"status": "error", "message": "URL parameter required"}), 400
+        
+        # Validate URL is from trusted domain
+        allowed_domains = ['subodhpgcollege.com', 'www.subodhpgcollege.com']
+        from urllib.parse import urlparse
+        parsed_url = urlparse(pdf_url)
+        
+        if parsed_url.netloc not in allowed_domains:
+            return jsonify({
+                "status": "error",
+                "message": "PDF URL must be from subodhpgcollege.com"
+            }), 403
             return jsonify({"status": "error", "message": "URL parameter required"}), 400
         
         pdf_handler = get_pdf_handler()

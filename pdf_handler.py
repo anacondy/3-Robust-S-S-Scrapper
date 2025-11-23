@@ -33,7 +33,14 @@ class PDFHandler:
         return self.cache_dir / f"{url_hash}.pdf"
     
     def download_pdf(self, url: str) -> Optional[bytes]:
-        """Download PDF from URL"""
+        """
+        Download PDF from URL
+        
+        SECURITY NOTE: SSL verification is disabled (verify=False) because the target 
+        college website (subodhpgcollege.com) has known SSL certificate issues. This 
+        is acceptable for read-only downloading of public PDFs. The app.py module 
+        validates that URLs are from trusted domains before calling this method.
+        """
         try:
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'

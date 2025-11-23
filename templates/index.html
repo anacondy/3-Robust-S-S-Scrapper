@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Subodh Student Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Outfit', sans-serif; }
+        body { 
+            font-family: 'Outfit', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         .glass {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
@@ -25,27 +29,60 @@
         @keyframes loader-dots1 { 0% { transform: scale(0); } 100% { transform: scale(1); } }
         @keyframes loader-dots3 { 0% { transform: scale(1); } 100% { transform: scale(0); } }
         @keyframes loader-dots2 { 0% { transform: translate(0, 0); } 100% { transform: translate(24px, 0); } }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* Prevents zoom on input focus in iOS */
+            }
+            h1 {
+                font-size: 1.25rem;
+            }
+            .section-title {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Custom scrollbar for better mobile experience */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 2px;
+        }
+        
+        /* Hardware acceleration for smoother animations */
+        .animate-pulse, .animate-spin {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
     <!-- Header -->
     <header class="bg-indigo-600 text-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <i data-lucide="graduation-cap" class="h-8 w-8"></i>
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <i data-lucide="graduation-cap" class="h-6 w-6 sm:h-8 sm:w-8"></i>
                 <div>
-                    <h1 class="text-xl font-bold leading-none">Subodh<span class="text-indigo-200">Hub</span></h1>
-                    <p class="text-xs text-indigo-200">Student Resource Portal</p>
+                    <h1 class="text-lg sm:text-xl font-bold leading-none">Subodh<span class="text-indigo-200">Hub</span></h1>
+                    <p class="text-[10px] sm:text-xs text-indigo-200 hidden sm:block">Student Resource Portal</p>
                 </div>
             </div>
-            <div class="flex items-center gap-4">
-                <div id="status-indicator" class="flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 text-xs font-medium">
+            <div class="flex items-center gap-2 sm:gap-4">
+                <div id="status-indicator" class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 rounded-full bg-indigo-500 text-[10px] sm:text-xs font-medium">
                     <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span>Online</span>
+                    <span class="hidden sm:inline">Online</span>
+                    <span class="sm:hidden">●</span>
                 </div>
-                <button onclick="refreshData()" id="refresh-btn" class="p-2 hover:bg-indigo-500 rounded-full transition" title="Force Refresh">
-                    <i data-lucide="refresh-cw" class="h-5 w-5"></i>
+                <button onclick="refreshData()" id="refresh-btn" class="p-1.5 sm:p-2 hover:bg-indigo-500 rounded-full transition" title="Force Refresh">
+                    <i data-lucide="refresh-cw" class="h-4 w-4 sm:h-5 sm:w-5"></i>
                 </button>
             </div>
         </div>
@@ -53,67 +90,68 @@
 
     <!-- Search & Filter -->
     <div class="bg-white border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 py-4">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 py-3 sm:py-4">
             <div class="relative">
-                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400"></i>
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-slate-400"></i>
                 <input type="text" id="search-input" placeholder="Search for 'Syllabus', 'Exam', 'Physics'..."
-                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50">
+                    class="w-full pl-9 sm:pl-10 pr-4 py-2 sm:py-3 text-sm sm:text-base rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50">
             </div>
         </div>
     </div>
 
     <!-- Main Content -->
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    <main class="flex-grow max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-8 w-full">
 
         <!-- Error Container -->
-        <div id="error-container" class="hidden mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 flex items-start gap-3">
-            <i data-lucide="alert-circle" class="h-6 w-6 mt-0.5 shrink-0"></i>
+        <div id="error-container" class="hidden mb-4 sm:mb-6 p-3 sm:p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 flex items-start gap-2 sm:gap-3">
+            <i data-lucide="alert-circle" class="h-5 w-5 sm:h-6 sm:w-6 mt-0.5 shrink-0"></i>
             <div>
-                <h3 class="font-bold">Connection Error</h3>
-                <p id="error-message" class="text-sm mt-1">Unable to load data.</p>
-                <button onclick="loadData()" class="mt-2 px-4 py-1 bg-red-600 text-white text-xs font-bold rounded hover:bg-red-700">Try Again</button>
+                <h3 class="font-bold text-sm sm:text-base">Connection Error</h3>
+                <p id="error-message" class="text-xs sm:text-sm mt-1">Unable to load data.</p>
+                <button onclick="loadData()" class="mt-2 px-3 sm:px-4 py-1 bg-red-600 text-white text-xs font-bold rounded hover:bg-red-700">Try Again</button>
             </div>
         </div>
 
         <!-- Loading State -->
-        <div id="loader" class="flex flex-col items-center justify-center py-20">
+        <div id="loader" class="flex flex-col items-center justify-center py-12 sm:py-20">
             <div class="loader-dots relative w-20 h-5 mb-4">
                 <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
                 <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
                 <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
                 <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
             </div>
-            <p class="text-slate-500 font-medium animate-pulse">Fetching latest college data...</p>
+            <p class="text-slate-500 text-sm sm:text-base font-medium animate-pulse">Fetching latest college data...</p>
         </div>
 
         <!-- Content Grid -->
-        <div id="content-area" class="hidden space-y-8">
+        <div id="content-area" class="hidden space-y-4 sm:space-y-8">
 
             <!-- Latest Updates Marquee -->
-            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-                <div class="bg-indigo-50 px-6 py-3 border-b border-indigo-100 flex justify-between items-center">
-                    <h2 class="font-bold text-indigo-900 flex items-center gap-2">
-                        <i data-lucide="bell" class="h-4 w-4"></i> Latest Updates
+            <section class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="bg-indigo-50 px-4 sm:px-6 py-2 sm:py-3 border-b border-indigo-100 flex justify-between items-center">
+                    <h2 class="font-bold text-sm sm:text-base text-indigo-900 flex items-center gap-2">
+                        <i data-lucide="bell" class="h-3.5 w-3.5 sm:h-4 sm:w-4"></i> Latest Updates
                     </h2>
-                    <span class="text-xs text-indigo-600 font-mono bg-white px-2 py-1 rounded">LIVE</span>
+                    <span class="text-[10px] sm:text-xs text-indigo-600 font-mono bg-white px-2 py-0.5 sm:py-1 rounded">LIVE</span>
                 </div>
-                <div id="updates-container" class="divide-y divide-slate-100 max-h-64 overflow-y-auto">
+                <div id="updates-container" class="divide-y divide-slate-100 max-h-48 sm:max-h-64 overflow-y-auto custom-scrollbar">
                     <!-- JS Injects updates here -->
                 </div>
             </section>
 
             <!-- Sections Grid -->
-            <div id="sections-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div id="sections-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <!-- JS Injects Section Cards here -->
             </div>
 
         </div>
     </main>
 
-    <footer class="bg-slate-800 text-slate-400 py-8 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-sm">Developed for SS Jain Subodh PG College Students.</p>
-            <p class="text-xs mt-2 text-slate-600">Data is scraped automatically. Not an official college website.</p>
+    <footer class="bg-slate-800 text-slate-400 py-6 sm:py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 text-center">
+            <p class="text-xs sm:text-sm">Developed for SS Jain Subodh PG College Students.</p>
+            <p class="text-[10px] sm:text-xs mt-2 text-slate-600">Data is scraped automatically. Not an official college website.</p>
+            <p class="text-[10px] sm:text-xs mt-1 text-slate-600" id="last-updated">Last updated: Loading...</p>
         </div>
     </footer>
 
@@ -136,37 +174,41 @@
             document.getElementById('content-area').classList.add('hidden');
             document.getElementById('error-container').classList.remove('hidden');
             document.getElementById('error-message').innerText = msg;
-            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-red-500 rounded-full"></div><span>Offline</span>`;
+            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-red-500 rounded-full"></div><span class="hidden sm:inline">Offline</span><span class="sm:hidden">●</span>`;
         }
 
         function showContent() {
             document.getElementById('loader').classList.add('hidden');
             document.getElementById('content-area').classList.remove('hidden');
-            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span>Online</span>`;
+            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span class="hidden sm:inline">Online</span><span class="sm:hidden">●</span>`;
         }
 
         // --- Data Logic ---
         async function loadData() {
             showLoader();
             try {
+                // For GitHub Pages, load data.json directly
                 // Add timestamp to prevent browser caching
-                const response = await fetch(`/api/data?t=${new Date().getTime()}`);
+                const response = await fetch(`data.json?t=${new Date().getTime()}`);
 
                 if (!response.ok) throw new Error(`Server Error: ${response.status}`);
 
-                const json = await response.json();
-
-                if (json.status === 'error') throw new Error(json.message);
-
-                allData = json.data;
+                const data = await response.json();
+                
+                allData = data;
                 render(allData);
                 showContent();
+                
+                // Update last updated time
+                if(data.meta && data.meta.scraped_at) {
+                    document.getElementById('last-updated').innerText = `Last updated: ${data.meta.scraped_at}`;
+                }
 
             } catch (err) {
                 console.error(err);
-                let userMsg = "Could not connect to the local server.";
+                let userMsg = "Could not load data.";
                 if(err.message.includes("Failed to fetch")) {
-                    userMsg = "Server is not running. Run 'python app.py' in your terminal.";
+                    userMsg = "Unable to fetch data. Please check your internet connection.";
                 } else {
                     userMsg = err.message;
                 }
@@ -178,16 +220,14 @@
             const btn = document.getElementById('refresh-btn');
             btn.classList.add('animate-spin');
             try {
-                const response = await fetch('/api/refresh');
-                const json = await response.json();
-                if(json.status === 'success') {
-                    allData = json.data;
-                    render(allData);
-                }
+                // On GitHub Pages, just reload the data.json
+                await loadData();
             } catch(e) {
                 alert("Refresh failed. Check console.");
             } finally {
-                btn.classList.remove('animate-spin');
+                setTimeout(() => {
+                    btn.classList.remove('animate-spin');
+                }, 500);
             }
         }
 
@@ -199,14 +239,14 @@
             // 1. Render Updates
             updatesContainer.innerHTML = '';
             if(data.sections.Latest_Updates.length === 0) {
-                updatesContainer.innerHTML = '<div class="p-4 text-slate-400 text-center text-sm">No recent updates found.</div>';
+                updatesContainer.innerHTML = '<div class="p-3 sm:p-4 text-slate-400 text-center text-xs sm:text-sm">No recent updates found.</div>';
             } else {
                 data.sections.Latest_Updates.forEach(item => {
                     const div = document.createElement('div');
-                    div.className = "p-4 hover:bg-slate-50 transition group";
+                    div.className = "p-3 sm:p-4 hover:bg-slate-50 transition group";
                     div.innerHTML = `
-                        <a href="${item.link}" target="_blank" class="flex justify-between items-start gap-4">
-                            <p class="text-sm font-medium text-slate-700 group-hover:text-indigo-600 transition">${item.text}</p>
+                        <a href="${item.link}" target="_blank" class="flex justify-between items-start gap-2 sm:gap-4">
+                            <p class="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-indigo-600 transition line-clamp-2">${item.text}</p>
                             ${item.is_new ? '<span class="shrink-0 px-2 py-0.5 bg-red-100 text-red-600 text-[10px] font-bold rounded-full uppercase">New</span>' : ''}
                         </a>
                     `;
@@ -220,34 +260,34 @@
                 if(key === "Latest_Updates") continue;
 
                 const card = document.createElement('div');
-                card.className = "bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col";
+                card.className = "bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 p-4 sm:p-6 flex flex-col";
 
                 let iconName = "file-text";
                 if(key.includes("Exam")) iconName = "calendar";
                 if(key.includes("Syllabus")) iconName = "book-open";
 
                 let contentHTML = `
-                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
-                        <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg">
-                            <i data-lucide="${iconName}" class="h-5 w-5"></i>
+                    <div class="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 border-b border-slate-100 pb-2 sm:pb-3">
+                        <div class="p-1.5 sm:p-2 bg-indigo-100 text-indigo-600 rounded-lg">
+                            <i data-lucide="${iconName}" class="h-4 w-4 sm:h-5 sm:w-5"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-slate-800 capitalize">${key.replace(/_/g, ' ')}</h3>
+                        <h3 class="section-title font-bold text-base sm:text-lg text-slate-800 capitalize">${key.replace(/_/g, ' ')}</h3>
                     </div>
                 `;
 
                 if(val.error) {
-                    contentHTML += `<div class="text-red-500 text-sm bg-red-50 p-3 rounded">Could not scrape this section. Website might be down.</div>`;
+                    contentHTML += `<div class="text-red-500 text-xs sm:text-sm bg-red-50 p-2 sm:p-3 rounded">Could not scrape this section. Website might be down.</div>`;
                 } else if (val.pdfs.length === 0 && val.links.length === 0) {
-                    contentHTML += `<div class="text-slate-400 text-sm">No documents found in this section.</div>`;
+                    contentHTML += `<div class="text-slate-400 text-xs sm:text-sm">No documents found in this section.</div>`;
                 } else {
-                    contentHTML += `<div class="space-y-2 max-h-60 overflow-y-auto pr-2 custom-scrollbar">`;
+                    contentHTML += `<div class="space-y-1 sm:space-y-2 max-h-48 sm:max-h-60 overflow-y-auto pr-1 sm:pr-2 custom-scrollbar">`;
 
                     // PDFs
                     val.pdfs.forEach(pdf => {
                         contentHTML += `
-                            <a href="${pdf.url}" target="_blank" class="searchable-item flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
-                                <i data-lucide="file" class="h-4 w-4 text-slate-400 group-hover:text-red-500"></i>
-                                <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${pdf.title}</span>
+                            <a href="${pdf.url}" target="_blank" class="searchable-item flex items-center gap-2 sm:gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                                <i data-lucide="file" class="h-3.5 w-3.5 sm:h-4 sm:w-4 text-slate-400 group-hover:text-red-500 shrink-0"></i>
+                                <span class="text-xs sm:text-sm text-slate-600 group-hover:text-slate-900 truncate">${pdf.title}</span>
                             </a>
                         `;
                     });
@@ -255,9 +295,9 @@
                     // Links
                     val.links.forEach(link => {
                         contentHTML += `
-                            <a href="${link.url}" target="_blank" class="searchable-item flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
-                                <i data-lucide="link" class="h-4 w-4 text-slate-400 group-hover:text-blue-500"></i>
-                                <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${link.title}</span>
+                            <a href="${link.url}" target="_blank" class="searchable-item flex items-center gap-2 sm:gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                                <i data-lucide="link" class="h-3.5 w-3.5 sm:h-4 sm:w-4 text-slate-400 group-hover:text-blue-500 shrink-0"></i>
+                                <span class="text-xs sm:text-sm text-slate-600 group-hover:text-slate-900 truncate">${link.title}</span>
                             </a>
                         `;
                     });

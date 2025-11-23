@@ -1,20 +1,21 @@
+#!/usr/bin/env python3
+"""
+Standalone scraper script for GitHub Actions
+This script runs the scraper without Flask and saves data to data.json
+"""
+
 import os
 import json
 import requests
 import urllib.parse
 import time
-from flask import Flask, render_template, jsonify
 from bs4 import BeautifulSoup
-
-# Initialize Flask App
-app = Flask(__name__)
 
 # --- CONFIGURATION ---
 BASE_URL = "https://www.subodhpgcollege.com/"
 DATA_FILE = "data.json"
 
 # Specific sections to scrape
-# Using dictionary to map readable names to URL paths
 SECTIONS = {
     "Exam Notices": "subodhexaminationportal",
     "Syllabus (UG)": "Syllabus_UG_Courses",
@@ -27,8 +28,10 @@ SECTIONS = {
 
 def full_url(path):
     """Converts relative paths to full URLs."""
-    if not path: return "#"
-    if path.startswith("http"): return path
+    if not path:
+        return "#"
+    if path.startswith("http"):
+        return path
     return urllib.parse.urljoin(BASE_URL, path)
 
 
@@ -36,14 +39,6 @@ def save_data(data):
     """Cache data to prevent spamming the college server."""
     with open(DATA_FILE, 'w') as f:
         json.dump(data, f, indent=4)
-
-
-def load_data():
-    """Load cached data."""
-    if os.path.exists(DATA_FILE):
-        with open(DATA_FILE, 'r') as f:
-            return json.load(f)
-    return None
 
 
 # --- SCRAPER ENGINE ---
@@ -149,42 +144,12 @@ def robust_scrape():
     return all_data
 
 
-# --- FLASK ROUTES ---
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
-@app.route('/api/data')
-def get_data():
-    # Try to load cache first
-    data = load_data()
-
-    # If no cache, scrape immediately
-    if not data:
-        try:
-            data = robust_scrape()
-        except Exception as e:
-            return jsonify({"status": "error", "message": str(e)}), 500
-
-    return jsonify({"status": "success", "data": data})
-
-
-@app.route('/api/refresh')
-def refresh():
-    try:
-        data = robust_scrape()
-        return jsonify({"status": "success", "data": data})
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
-
-
 if __name__ == "__main__":
-    # Suppress SSL warnings in console
+    # Suppress SSL warnings
     import urllib3
-
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-    print("Server is running. Open http://127.0.0.1:5000 in your browser.")
-    app.run(debug=True, port=5000)
+    
+    print("Starting scraper...")
+    data = robust_scrape()
+    print(f"Data saved to {DATA_FILE}")
+    print(f"Scraped {len(data['sections'])} sections")

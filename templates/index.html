@@ -25,6 +25,9 @@
         @keyframes loader-dots1 { 0% { transform: scale(0); } 100% { transform: scale(1); } }
         @keyframes loader-dots3 { 0% { transform: scale(1); } 100% { transform: scale(0); } }
         @keyframes loader-dots2 { 0% { transform: translate(0, 0); } 100% { transform: translate(24px, 0); } }
+        
+        /* Custom Font for Registry */
+        .registry-font { font-family: 'Courier New', Courier, monospace; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
@@ -94,13 +97,16 @@
     <!-- Main Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
 
-        <!-- Error Container -->
-        <div id="error-container" class="hidden mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 flex items-start gap-3">
-            <i data-lucide="alert-circle" class="h-6 w-6 mt-0.5 shrink-0"></i>
-            <div>
-                <h3 class="font-bold">Connection Error</h3>
-                <p id="error-message" class="text-sm mt-1">Unable to load data.</p>
-                <button onclick="loadData()" class="mt-2 px-4 py-1 bg-red-600 text-white text-xs font-bold rounded hover:bg-red-700">Try Again</button>
+        <!-- Error Container with Offline GIF -->
+        <div id="error-container" class="hidden mb-6 p-6 rounded-lg bg-red-50 border border-red-200 text-red-700 flex flex-col items-center gap-4">
+            <img src="{{ url_for('static', filename='offline.gif') }}" alt="Offline" class="w-48 h-48 object-contain rounded-lg">
+            <div class="text-center">
+                <h3 class="font-bold text-lg flex items-center justify-center gap-2">
+                    <i data-lucide="alert-circle" class="h-6 w-6"></i>
+                    Connection Error
+                </h3>
+                <p id="error-message" class="text-sm mt-2">Unable to load data. Check your connection.</p>
+                <button onclick="loadData()" class="mt-4 px-6 py-2 bg-red-600 text-white text-sm font-bold rounded-lg hover:bg-red-700 transition">Try Again</button>
             </div>
         </div>
 
@@ -138,6 +144,75 @@
 
         </div>
     </main>
+
+    <!-- HIDDEN FEATURE REGISTRY (Trigger: Hold C + O + 2 for 2 seconds) -->
+    <div id="registry-modal" class="hidden fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center registry-font select-none">
+        <div class="w-full max-w-2xl bg-slate-900 border border-green-500/30 p-1 shadow-[0_0_50px_rgba(34,197,94,0.1)] relative mx-4">
+            
+            <!-- Decorative Header with CLOSE BUTTON -->
+            <div class="bg-green-500/10 border-b border-green-500/30 p-2 flex justify-between items-center text-green-500 text-xs uppercase tracking-widest">
+                <span>// SYSTEM_REGISTRY_V1.0</span>
+                
+                <div class="flex items-center gap-3">
+                    <span class="animate-pulse">● CONNECTED</span>
+                    <!-- CLOSE (X) BUTTON -->
+                    <button onclick="document.getElementById('registry-modal').classList.add('hidden')" class="hover:text-red-500 transition cursor-pointer p-1" title="Close Registry">
+                        <i data-lucide="x" class="h-5 w-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 text-green-400 space-y-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-1">PROJECT: SUBODH_HUB</h2>
+                        <p class="text-xs text-green-600">ID: ANACONDY-3-ROBUST-SCRAPER-V2</p>
+                    </div>
+                    <!-- Metadata Column -->
+                    <div class="text-right space-y-1">
+                        <p class="text-[10px] text-green-600 uppercase">ORIGIN DATE</p>
+                        <p class="text-xs text-white">24 November, 2025</p>
+                        <p class="text-[10px] text-green-600 uppercase mt-2">CURRENT USER</p>
+                        <p class="text-xs text-white">SYSTEM_ADMIN</p>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="space-y-2">
+                    <p class="text-sm font-bold border-b border-green-500/30 pb-1 text-green-300">ACTIVE FEATURES</p>
+                    <ul class="text-xs space-y-1 opacity-80 list-disc list-inside">
+                        <li>Smart Search (Fuzzy, Roman Numerals, Multi-parameter)</li>
+                        <li>SQLite FTS5 Database (Sub-millisecond search)</li>
+                        <li>Advanced Filtering (Year, Semester, Subject, Type)</li>
+                        <li>Fast PDF Viewing with pikepdf (Linearization)</li>
+                        <li>Automatic Metadata Extraction</li>
+                        <li>Robust Python Scraper (BeautifulSoup4)</li>
+                        <li>JSON Caching System (Prevents server spam)</li>
+                        <li>Tailwind Glassmorphism UI</li>
+                        <li>Offline Detection with GIF</li>
+                    </ul>
+                </div>
+
+                <!-- Caveats Section -->
+                <div class="space-y-2">
+                    <p class="text-sm font-bold border-b border-green-500/30 pb-1 text-red-400">CAVEATS / KNOWN BUGS</p>
+                    <ul class="text-xs space-y-1 opacity-80 list-disc list-inside text-red-300/80">
+                        <li>College SSL Certificate is invalid (verify=False used).</li>
+                        <li>PDF URLs validated against whitelist (SSRF prevention).</li>
+                        <li>FTS5 queries sanitized (injection prevention).</li>
+                        <li>Scraping relies on HTML structure not changing.</li>
+                    </ul>
+                </div>
+
+                <!-- Footer with Credits -->
+                <div class="pt-6 border-t border-green-500/10 flex justify-between items-center text-[10px] text-green-700">
+                    <div>PRESS [ESC] OR [X] TO DISCONNECT</div>
+                    <div class="uppercase tracking-wider">CREDITS: ANACONDY + COPILOT</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-slate-800 text-slate-400 py-8 mt-auto">
         <div class="max-w-7xl mx-auto px-4 text-center">
@@ -509,6 +584,80 @@
         document.getElementById('filter-section').addEventListener('change', performSearch);
         document.getElementById('filter-year').addEventListener('change', performSearch);
         document.getElementById('filter-semester').addEventListener('change', performSearch);
+
+        // --- SMART SEARCH ENHANCEMENTS ---
+        // Normalize text for better matching (Roman numerals, common terms)
+        function normalizeSearchText(text) {
+            if (!text) return "";
+            let t = text.toLowerCase();
+            
+            // Remove punctuation like dots (B.Sc -> bsc)
+            t = t.replace(/\./g, '');
+            
+            // Map Roman Numerals & Common Words to Standard Numbers
+            const mappings = {
+                'iii': '3', 'third': '3', '3rd': '3',
+                'ii': '2', 'second': '2', '2nd': '2',
+                'iv': '4', 'fourth': '4', '4th': '4',
+                'i': '1', 'first': '1', '1st': '1',
+                'v': '5', 'fifth': '5', '5th': '5',
+                'vi': '6', 'sixth': '6', '6th': '6',
+                'sem': 'semester',
+                'timetable': 'time table',
+                'bsc': 'b sc',
+                'msc': 'm sc',
+                'ba': 'b a',
+                'ma': 'm a'
+            };
+
+            // Split into words, map them, and join back
+            return t.split(' ').map(word => mappings[word] || word).join(' ');
+        }
+
+        // --- HIDDEN FEATURE REGISTRY LOGIC (C+O+2) ---
+        const keys = { c: false, o: false, 2: false };
+        let registryTimer = null;
+        const modal = document.getElementById('registry-modal');
+
+        document.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase();
+            
+            if (key === 'c' || key === 'o' || key === '2') {
+                keys[key] = true;
+            }
+
+            // Check if all three keys are pressed
+            if (keys.c && keys.o && keys['2']) {
+                if (!registryTimer) {
+                    console.log("Registry Sequence Initiated...");
+                    registryTimer = setTimeout(() => {
+                        modal.classList.remove('hidden');
+                        lucide.createIcons(); // Re-init icons in modal
+                        console.log("Registry Activated!");
+                    }, 2000); // Hold for 2 seconds
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            const key = e.key.toLowerCase();
+            
+            // Handle ESC key to close modal
+            if (key === 'escape') {
+                modal.classList.add('hidden');
+            }
+            
+            if (key === 'c' || key === 'o' || key === '2') {
+                keys[key] = false;
+            }
+
+            // Cancel timer if any key is released
+            if (registryTimer) {
+                clearTimeout(registryTimer);
+                registryTimer = null;
+                console.log("Registry Sequence Cancelled.");
+            }
+        });
 
         // Start
         loadData();

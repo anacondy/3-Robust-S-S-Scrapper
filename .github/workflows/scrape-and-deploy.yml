@@ -42,14 +42,11 @@ jobs:
       
       - name: Copy files to docs directory
         run: |
-          mkdir -p docs
+          mkdir -p docs/api
           cp -r templates/index.html docs/
           cp data.json docs/
-          # Create a simple data API endpoint as a JSON file
-          mkdir -p docs/api
-          echo '{"status":"success","data":' > docs/api/data.json
-          cat data.json >> docs/api/data.json
-          echo '}' >> docs/api/data.json
+          # Create API endpoint JSON using Python for proper JSON handling
+          python -c "import json; data=json.load(open('data.json')); json.dump({'status':'success','data':data}, open('docs/api/data.json','w'), indent=2)"
       
       - name: Commit and push updated data
         run: |

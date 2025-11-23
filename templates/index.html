@@ -187,7 +187,9 @@
         async function loadData() {
             showLoader();
             try {
-                // For GitHub Pages, load data.json directly
+                // Load data.json directly for both GitHub Pages and local Flask server
+                // GitHub Pages: Serves static data.json file
+                // Local Flask: Serves data.json as a static file
                 // Add timestamp to prevent browser caching
                 const response = await fetch(`data.json?t=${new Date().getTime()}`);
 

@@ -52,7 +52,13 @@ def fetch_soup(url):
     """
     Robust fetcher.
     - Sets User-Agent to look like Chrome.
-    - Disables SSL verification (verify=False) because college sites often have bad certs.
+    - Disables SSL verification (verify=False) for the specific target website.
+    
+    SECURITY NOTE: SSL verification is disabled because the target college website
+    (subodhpgcollege.com) has known SSL certificate issues. This is acceptable 
+    for read-only scraping of public data. For production use with sensitive data,
+    implement proper certificate verification or use a custom CA bundle.
+    
     - Sets a timeout so it doesn't hang forever.
     """
     headers = {

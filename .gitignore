@@ -22,3 +22,12 @@
 ".installed.cfg"
 "*.egg"
 __pycache__/
+
+# Database files
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# PDF cache
+pdf_cache/

@@ -54,10 +54,39 @@
     <!-- Search & Filter -->
     <div class="bg-white border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-4">
-            <div class="relative">
+            <div class="relative mb-3">
                 <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400"></i>
-                <input type="text" id="search-input" placeholder="Search for 'Syllabus', 'Exam', 'Physics'..."
+                <input type="text" id="search-input" placeholder="Search: 'Physics 2024', 'Semester II', 'Exam October', 'UG Syllabus'..."
                     class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50">
+            </div>
+            
+            <!-- Advanced Filters (collapsible) -->
+            <div id="filters-container" class="hidden grid grid-cols-2 md:grid-cols-4 gap-2 mt-3">
+                <select id="filter-type" class="px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-500">
+                    <option value="">All Types</option>
+                    <option value="pdf">PDFs Only</option>
+                    <option value="link">Links Only</option>
+                </select>
+                
+                <select id="filter-section" class="px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-500">
+                    <option value="">All Sections</option>
+                </select>
+                
+                <select id="filter-year" class="px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-500">
+                    <option value="">All Years</option>
+                </select>
+                
+                <select id="filter-semester" class="px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-500">
+                    <option value="">All Semesters</option>
+                </select>
+            </div>
+            
+            <div class="flex justify-between items-center mt-2">
+                <button id="toggle-filters" class="text-xs text-indigo-600 hover:text-indigo-700 font-medium flex items-center gap-1">
+                    <i data-lucide="sliders-horizontal" class="h-3 w-3"></i>
+                    <span>Advanced Filters</span>
+                </button>
+                <span id="search-count" class="text-xs text-slate-500"></span>
             </div>
         </div>
     </div>
@@ -272,23 +301,218 @@
             lucide.createIcons();
         }
 
-        // --- Search Logic ---
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-            const items = document.querySelectorAll('.searchable-item');
+        // --- Advanced Search Logic ---
+        let searchTimeout = null;
+        let availableFilters = null;
 
-            items.forEach(item => {
-                const text = item.innerText.toLowerCase();
-                if(text.includes(term)) {
-                    item.style.display = 'flex';
+        // Load filters on startup
+        async function loadFilters() {
+            try {
+                const response = await fetch('/api/filters');
+                const json = await response.json();
+                if (json.status === 'success') {
+                    availableFilters = json.filters;
+                    populateFilterDropdowns();
+                }
+            } catch (e) {
+                console.error('Failed to load filters:', e);
+            }
+        }
+
+        function populateFilterDropdowns() {
+            if (!availableFilters) return;
+
+            // Populate section filter
+            const sectionSelect = document.getElementById('filter-section');
+            availableFilters.sections.forEach(section => {
+                const option = document.createElement('option');
+                option.value = section;
+                option.textContent = section;
+                sectionSelect.appendChild(option);
+            });
+
+            // Populate year filter
+            const yearSelect = document.getElementById('filter-year');
+            availableFilters.years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            });
+
+            // Populate semester filter
+            const semesterSelect = document.getElementById('filter-semester');
+            availableFilters.semesters.forEach(semester => {
+                const option = document.createElement('option');
+                option.value = semester;
+                option.textContent = `Semester ${semester}`;
+                semesterSelect.appendChild(option);
+            });
+        }
+
+        // Toggle advanced filters
+        document.getElementById('toggle-filters').addEventListener('click', () => {
+            const container = document.getElementById('filters-container');
+            container.classList.toggle('hidden');
+            lucide.createIcons();
+        });
+
+        // Perform advanced search
+        async function performSearch() {
+            const query = document.getElementById('search-input').value.trim();
+            
+            // If no query and no filters, show all data
+            if (!query && !hasActiveFilters()) {
+                render(allData);
+                document.getElementById('search-count').textContent = '';
+                return;
+            }
+
+            try {
+                const params = new URLSearchParams();
+                if (query) params.append('q', query);
+                
+                const type = document.getElementById('filter-type').value;
+                if (type) params.append('type', type);
+                
+                const section = document.getElementById('filter-section').value;
+                if (section) params.append('section', section);
+                
+                const year = document.getElementById('filter-year').value;
+                if (year) params.append('year', year);
+                
+                const semester = document.getElementById('filter-semester').value;
+                if (semester) params.append('semester', semester);
+
+                const response = await fetch(`/api/search?${params}`);
+                const json = await response.json();
+
+                if (json.status === 'success') {
+                    renderSearchResults(json.results);
+                    document.getElementById('search-count').textContent = 
+                        `${json.count} result${json.count !== 1 ? 's' : ''} found`;
+                }
+            } catch (e) {
+                console.error('Search failed:', e);
+            }
+        }
+
+        function hasActiveFilters() {
+            return document.getElementById('filter-type').value ||
+                   document.getElementById('filter-section').value ||
+                   document.getElementById('filter-year').value ||
+                   document.getElementById('filter-semester').value;
+        }
+
+        function renderSearchResults(results) {
+            const sectionsGrid = document.getElementById('sections-grid');
+            const updatesContainer = document.getElementById('updates-container');
+            
+            // Group results by section
+            const grouped = {};
+            results.forEach(item => {
+                if (!grouped[item.section]) {
+                    grouped[item.section] = { pdfs: [], links: [] };
+                }
+                if (item.content_type === 'pdf') {
+                    grouped[item.section].pdfs.push(item);
                 } else {
-                    item.style.display = 'none';
+                    grouped[item.section].links.push(item);
                 }
             });
+
+            // Clear current display
+            sectionsGrid.innerHTML = '';
+            updatesContainer.innerHTML = '<div class="p-4 text-slate-400 text-center text-sm">Using advanced search</div>';
+
+            // Render grouped results
+            for (const [section, content] of Object.entries(grouped)) {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col";
+
+                let iconName = "file-text";
+                if (section.includes("Exam")) iconName = "calendar";
+                if (section.includes("Syllabus")) iconName = "book-open";
+
+                let contentHTML = `
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg">
+                            <i data-lucide="${iconName}" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 capitalize">${section.replace(/_/g, ' ')}</h3>
+                    </div>
+                    <div class="space-y-2 max-h-60 overflow-y-auto pr-2">
+                `;
+
+                // Render PDFs
+                content.pdfs.forEach(pdf => {
+                    const metadata = [];
+                    if (pdf.year) metadata.push(pdf.year);
+                    if (pdf.semester) metadata.push(`Sem ${pdf.semester}`);
+                    if (pdf.subject) metadata.push(pdf.subject);
+                    
+                    const metaText = metadata.length ? ` <span class="text-xs text-slate-400">(${metadata.join(', ')})</span>` : '';
+                    
+                    // Use fast PDF viewer endpoint
+                    const fastUrl = `/api/pdf/view?url=${encodeURIComponent(pdf.url)}`;
+                    
+                    contentHTML += `
+                        <a href="${fastUrl}" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                            <i data-lucide="file" class="h-4 w-4 text-slate-400 group-hover:text-red-500"></i>
+                            <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${pdf.title}${metaText}</span>
+                        </a>
+                    `;
+                });
+
+                // Render Links
+                content.links.forEach(link => {
+                    const metadata = [];
+                    if (link.year) metadata.push(link.year);
+                    if (link.semester) metadata.push(`Sem ${link.semester}`);
+                    if (link.subject) metadata.push(link.subject);
+                    
+                    const metaText = metadata.length ? ` <span class="text-xs text-slate-400">(${metadata.join(', ')})</span>` : '';
+                    
+                    contentHTML += `
+                        <a href="${link.url}" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                            <i data-lucide="link" class="h-4 w-4 text-slate-400 group-hover:text-blue-500"></i>
+                            <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${link.title}${metaText}</span>
+                        </a>
+                    `;
+                });
+
+                contentHTML += `</div>`;
+                card.innerHTML = contentHTML;
+                sectionsGrid.appendChild(card);
+            }
+
+            if (Object.keys(grouped).length === 0) {
+                sectionsGrid.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i data-lucide="search-x" class="h-12 w-12 text-slate-300 mx-auto mb-3"></i>
+                        <p class="text-slate-500">No results found. Try a different search term.</p>
+                    </div>
+                `;
+            }
+
+            lucide.createIcons();
+        }
+
+        // Search input with debounce
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(performSearch, 300);
         });
+
+        // Filter change listeners
+        document.getElementById('filter-type').addEventListener('change', performSearch);
+        document.getElementById('filter-section').addEventListener('change', performSearch);
+        document.getElementById('filter-year').addEventListener('change', performSearch);
+        document.getElementById('filter-semester').addEventListener('change', performSearch);
 
         // Start
         loadData();
+        loadFilters();
     </script>
 </body>
 </html>

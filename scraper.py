@@ -39,6 +39,15 @@ def save_data(data):
     """Cache data to prevent spamming the college server."""
     with open(DATA_FILE, 'w') as f:
         json.dump(data, f, indent=4)
+    
+    # Also populate database for search (if available)
+    try:
+        from database import get_db
+        db = get_db()
+        db.populate_from_json(data)
+        print("Database populated successfully!")
+    except Exception as e:
+        print(f"Note: Could not populate database: {e}")
 
 
 # --- SCRAPER ENGINE ---

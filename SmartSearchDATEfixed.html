@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subodh Student Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .loader-dots div {
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        .loader-dots div:nth-child(1) { left: 8px; animation: loader-dots1 0.6s infinite; }
+        .loader-dots div:nth-child(2) { left: 8px; animation: loader-dots2 0.6s infinite; }
+        .loader-dots div:nth-child(3) { left: 32px; animation: loader-dots2 0.6s infinite; }
+        .loader-dots div:nth-child(4) { left: 56px; animation: loader-dots3 0.6s infinite; }
+        @keyframes loader-dots1 { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+        @keyframes loader-dots3 { 0% { transform: scale(1); } 100% { transform: scale(0); } }
+        @keyframes loader-dots2 { 0% { transform: translate(0, 0); } 100% { transform: translate(24px, 0); } }
+        
+        /* Custom Font for Registry */
+        .registry-font { font-family: 'Courier New', Courier, monospace; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="h-8 w-8"></i>
+                <div>
+                    <h1 class="text-xl font-bold leading-none">Subodh<span class="text-indigo-200">Hub</span></h1>
+                    <p class="text-xs text-indigo-200">Student Resource Portal</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div id="status-indicator" class="flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 text-xs font-medium">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span>Online</span>
+                </div>
+                <button onclick="refreshData()" id="refresh-btn" class="p-2 hover:bg-indigo-500 rounded-full transition" title="Force Refresh">
+                    <i data-lucide="refresh-cw" class="h-5 w-5"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filter -->
+    <div class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400"></i>
+                <input type="text" id="search-input" placeholder="Search (e.g., 'B.Sc Physics', 'Sem III', 'Exam Date')..."
+                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+
+        <!-- Error Container -->
+        <div id="error-container" class="hidden mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 flex items-start gap-3">
+            <i data-lucide="alert-circle" class="h-6 w-6 mt-0.5 shrink-0"></i>
+            <div>
+                <h3 class="font-bold">Connection Error</h3>
+                <p id="error-message" class="text-sm mt-1">Unable to load data.</p>
+                <button onclick="loadData()" class="mt-2 px-4 py-1 bg-red-600 text-white text-xs font-bold rounded hover:bg-red-700">Try Again</button>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loader" class="flex flex-col items-center justify-center py-20">
+            <div class="loader-dots relative w-20 h-5 mb-4">
+                <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
+                <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
+                <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
+                <div class="absolute top-0 w-3 h-3 rounded-full bg-indigo-600"></div>
+            </div>
+            <p class="text-slate-500 font-medium animate-pulse">Fetching latest college data...</p>
+        </div>
+
+        <!-- Content Grid -->
+        <div id="content-area" class="hidden space-y-8">
+
+            <!-- Latest Updates Marquee -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="bg-indigo-50 px-6 py-3 border-b border-indigo-100 flex justify-between items-center">
+                    <h2 class="font-bold text-indigo-900 flex items-center gap-2">
+                        <i data-lucide="bell" class="h-4 w-4"></i> Latest Updates
+                    </h2>
+                    <span class="text-xs text-indigo-600 font-mono bg-white px-2 py-1 rounded">LIVE</span>
+                </div>
+                <div id="updates-container" class="divide-y divide-slate-100 max-h-64 overflow-y-auto">
+                    <!-- JS Injects updates here -->
+                </div>
+            </section>
+
+            <!-- Sections Grid -->
+            <div id="sections-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- JS Injects Section Cards here -->
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm">Developed for SS Jain Subodh PG College Students.</p>
+            <p class="text-xs mt-2 text-slate-600">Data is scraped automatically. Not an official college website.</p>
+        </div>
+    </footer>
+
+    <!-- HIDDEN FEATURE REGISTRY (Trigger: Hold C + O + 2 for 2 seconds) -->
+    <div id="registry-modal" class="hidden fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center registry-font select-none">
+        <div class="w-full max-w-2xl bg-slate-900 border border-green-500/30 p-1 shadow-[0_0_50px_rgba(34,197,94,0.1)] relative mx-4">
+            
+            <!-- Decorative Header with CLOSE BUTTON -->
+            <div class="bg-green-500/10 border-b border-green-500/30 p-2 flex justify-between items-center text-green-500 text-xs uppercase tracking-widest">
+                <span>// SYSTEM_REGISTRY_V1.0</span>
+                
+                <div class="flex items-center gap-3">
+                    <span class="animate-pulse">● CONNECTED</span>
+                    <!-- CLOSE (X) BUTTON -->
+                    <button onclick="document.getElementById('registry-modal').classList.add('hidden')" class="hover:text-red-500 transition cursor-pointer p-1" title="Close Registry">
+                        <i data-lucide="x" class="h-5 w-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 text-green-400 space-y-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-1">PROJECT: SUBODH_HUB</h2>
+                        <p class="text-xs text-green-600">ID: ANACONDY-3-ROBUST-SCRAPER</p>
+                    </div>
+                    <!-- Metadata Column -->
+                    <div class="text-right space-y-1">
+                        <p class="text-[10px] text-green-600 uppercase">ORIGIN DATE</p>
+                        <p class="text-xs text-white">24 November, 2025</p>
+                        <p class="text-[10px] text-green-600 uppercase mt-2">CURRENT USER</p>
+                        <p class="text-xs text-white">SYSTEM_ADMIN</p>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="space-y-2">
+                    <p class="text-sm font-bold border-b border-green-500/30 pb-1 text-green-300">ACTIVE FEATURES</p>
+                    <ul class="text-xs space-y-1 opacity-80 list-disc list-inside">
+                        <li>Smart Search (Fuzzy, Roman Numerals)</li>
+                        <li>Robust Python Scraper (BeautifulSoup4)</li>
+                        <li>JSON Caching System (Prevents server spam)</li>
+                        <li>Tailwind Glassmorphism UI</li>
+                    </ul>
+                </div>
+
+                <!-- Caveats Section -->
+                <div class="space-y-2">
+                    <p class="text-sm font-bold border-b border-green-500/30 pb-1 text-red-400">CAVEATS / KNOWN BUGS</p>
+                    <ul class="text-xs space-y-1 opacity-80 list-disc list-inside text-red-300/80">
+                        <li>College SSL Certificate is invalid (verify=False used).</li>
+                        <li>PDF links depend on relative paths matching base URL.</li>
+                        <li>Scraping relies on HTML structure not changing.</li>
+                    </ul>
+                </div>
+
+                <!-- Footer with Credits -->
+                <div class="pt-6 border-t border-green-500/10 flex justify-between items-center text-[10px] text-green-700">
+                    <div>PRESS [ESC] OR [X] TO DISCONNECT</div>
+                    <div class="uppercase tracking-wider">CREDITS: ANACONDY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Icons ---
+        lucide.createIcons();
+
+        // --- Global State ---
+        let allData = null;
+
+        // --- UI Functions ---
+        function showLoader() {
+            document.getElementById('loader').classList.remove('hidden');
+            document.getElementById('content-area').classList.add('hidden');
+            document.getElementById('error-container').classList.add('hidden');
+        }
+
+        function showError(msg) {
+            document.getElementById('loader').classList.add('hidden');
+            document.getElementById('content-area').classList.add('hidden');
+            document.getElementById('error-container').classList.remove('hidden');
+            document.getElementById('error-message').innerText = msg;
+            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-red-500 rounded-full"></div><span>Offline</span>`;
+        }
+
+        function showContent() {
+            document.getElementById('loader').classList.add('hidden');
+            document.getElementById('content-area').classList.remove('hidden');
+            document.getElementById('status-indicator').innerHTML = `<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span>Online</span>`;
+        }
+
+        // --- Data Logic ---
+        async function loadData() {
+            showLoader();
+            try {
+                // Add timestamp to prevent browser caching
+                const response = await fetch(`/api/data?t=${new Date().getTime()}`);
+
+                if (!response.ok) throw new Error(`Server Error: ${response.status}`);
+
+                const json = await response.json();
+
+                if (json.status === 'error') throw new Error(json.message);
+
+                allData = json.data;
+                render(allData);
+                showContent();
+
+            } catch (err) {
+                console.error(err);
+                let userMsg = "Could not connect to the local server.";
+                if(err.message.includes("Failed to fetch")) {
+                    userMsg = "Server is not running. Run 'python app.py' in your terminal.";
+                } else {
+                    userMsg = err.message;
+                }
+                showError(userMsg);
+            }
+        }
+
+        async function refreshData() {
+            const btn = document.getElementById('refresh-btn');
+            btn.classList.add('animate-spin');
+            try {
+                const response = await fetch('/api/refresh');
+                const json = await response.json();
+                if(json.status === 'success') {
+                    allData = json.data;
+                    render(allData);
+                }
+            } catch(e) {
+                alert("Refresh failed. Check console.");
+            } finally {
+                btn.classList.remove('animate-spin');
+            }
+        }
+
+        // --- Render Logic ---
+        function render(data) {
+            const updatesContainer = document.getElementById('updates-container');
+            const sectionsGrid = document.getElementById('sections-grid');
+
+            // 1. Render Updates
+            updatesContainer.innerHTML = '';
+            if(data.sections.Latest_Updates.length === 0) {
+                updatesContainer.innerHTML = '<div class="p-4 text-slate-400 text-center text-sm">No recent updates found.</div>';
+            } else {
+                data.sections.Latest_Updates.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = "p-4 hover:bg-slate-50 transition group";
+                    div.innerHTML = `
+                        <a href="${item.link}" target="_blank" class="flex justify-between items-start gap-4">
+                            <p class="text-sm font-medium text-slate-700 group-hover:text-indigo-600 transition">${item.text}</p>
+                            ${item.is_new ? '<span class="shrink-0 px-2 py-0.5 bg-red-100 text-red-600 text-[10px] font-bold rounded-full uppercase">New</span>' : ''}
+                        </a>
+                    `;
+                    updatesContainer.appendChild(div);
+                });
+            }
+
+            // 2. Render Sections
+            sectionsGrid.innerHTML = '';
+            for (const [key, val] of Object.entries(data.sections)) {
+                if(key === "Latest_Updates") continue;
+
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col";
+
+                let iconName = "file-text";
+                if(key.includes("Exam")) iconName = "calendar";
+                if(key.includes("Syllabus")) iconName = "book-open";
+
+                let contentHTML = `
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg">
+                            <i data-lucide="${iconName}" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 capitalize">${key.replace(/_/g, ' ')}</h3>
+                    </div>
+                `;
+
+                if(val.error) {
+                    contentHTML += `<div class="text-red-500 text-sm bg-red-50 p-3 rounded">Could not scrape this section. Website might be down.</div>`;
+                } else if (val.pdfs.length === 0 && val.links.length === 0) {
+                    contentHTML += `<div class="text-slate-400 text-sm">No documents found in this section.</div>`;
+                } else {
+                    contentHTML += `<div class="space-y-2 max-h-60 overflow-y-auto pr-2 custom-scrollbar">`;
+
+                    // PDFs
+                    val.pdfs.forEach(pdf => {
+                        contentHTML += `
+                            <a href="${pdf.url}" target="_blank" class="searchable-item flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                                <i data-lucide="file" class="h-4 w-4 text-slate-400 group-hover:text-red-500"></i>
+                                <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${pdf.title}</span>
+                            </a>
+                        `;
+                    });
+
+                    // Links
+                    val.links.forEach(link => {
+                        contentHTML += `
+                            <a href="${link.url}" target="_blank" class="searchable-item flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                                <i data-lucide="link" class="h-4 w-4 text-slate-400 group-hover:text-blue-500"></i>
+                                <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${link.title}</span>
+                            </a>
+                        `;
+                    });
+                    contentHTML += `</div>`;
+                }
+
+                card.innerHTML = contentHTML;
+                sectionsGrid.appendChild(card);
+            }
+
+            // Re-initialize icons for new elements
+            lucide.createIcons();
+        }
+
+        // --- SMART SEARCH LOGIC ---
+        
+        // 1. Normalizer Function: Cleans input to handle permutations
+        function normalizeText(text) {
+            if (!text) return "";
+            let t = text.toLowerCase();
+            
+            // Remove punctuation like dots (B.Sc -> bsc)
+            t = t.replace(/\./g, '');
+            
+            // Map Roman Numerals & Common Words to Standard Numbers
+            const mappings = {
+                'iii': '3', 'third': '3', '3rd': '3',
+                'ii': '2', 'second': '2', '2nd': '2',
+                'iv': '4', 'fourth': '4', '4th': '4',
+                'i': '1', 'first': '1', '1st': '1',
+                'v': '5', 'fifth': '5', '5th': '5',
+                'vi': '6', 'sixth': '6', '6th': '6',
+                'timetable': 'time table'
+            };
+
+            // Split into words, map them, and join back
+            return t.split(' ').map(word => mappings[word] || word).join(' ');
+        }
+
+        // 2. Event Listener
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const rawQuery = e.target.value;
+            const normalizedQuery = normalizeText(rawQuery);
+            const searchTerms = normalizedQuery.split(' ').filter(t => t.length > 0); // Remove empty spaces
+
+            const items = document.querySelectorAll('.searchable-item');
+
+            items.forEach(item => {
+                // We check the visible text AND the hidden URL for keywords
+                const itemText = normalizeText(item.innerText);
+                const itemHref = normalizeText(item.getAttribute('href'));
+                
+                // Logic: Does the item contain ALL search terms? (AND logic)
+                const isMatch = searchTerms.every(term => 
+                    itemText.includes(term) || itemHref.includes(term)
+                );
+
+                if(isMatch) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Start
+        loadData();
+
+        // --- HIDDEN FEATURE REGISTRY LOGIC (C+O+2) ---
+        const keys = { c: false, o: false, 2: false };
+        let registryTimer = null;
+        const modal = document.getElementById('registry-modal');
+
+        document.addEventListener('keydown', (e) => {
+            const k = e.key.toLowerCase();
+            if (k === 'c') keys.c = true;
+            if (k === 'o') keys.o = true;
+            if (k === '2') keys['2'] = true;
+
+            // Check if all 3 are pressed
+            if (keys.c && keys.o && keys['2']) {
+                if (!registryTimer) {
+                    console.log("Registry Sequence Initiated...");
+                    // Wait 2 seconds
+                    registryTimer = setTimeout(() => {
+                        modal.classList.remove('hidden');
+                        // Play a tiny sound effect (optional system beep feeling)
+                        const audio = new AudioContext();
+                        const osc = audio.createOscillator();
+                        const gain = audio.createGain();
+                        osc.connect(gain);
+                        gain.connect(audio.destination);
+                        osc.frequency.value = 800;
+                        gain.gain.exponentialRampToValueAtTime(0.00001, audio.currentTime + 0.1);
+                        osc.start();
+                        osc.stop(audio.currentTime + 0.1);
+                    }, 2000);
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            const k = e.key.toLowerCase();
+            if (k === 'c') keys.c = false;
+            if (k === 'o') keys.o = false;
+            if (k === '2') keys['2'] = false;
+
+            // If any key is released, cancel the timer
+            if (registryTimer) {
+                clearTimeout(registryTimer);
+                registryTimer = null;
+                console.log("Sequence Aborted.");
+            }
+            
+            // Allow ESC to close it
+            if (e.key === "Escape") {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

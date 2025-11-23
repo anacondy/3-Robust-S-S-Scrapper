@@ -6,6 +6,18 @@ A robust web scraper and student resource portal for SS Jain Subodh PG College. 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## 📸 Screenshots
+
+### Desktop View
+![Desktop View](https://github.com/user-attachments/assets/7303e767-28d7-4df6-b6d0-f0a2d5b45d9a)
+*Clean, modern interface optimized for desktop browsers*
+
+### Mobile View (375x667 - iPhone SE)
+![Mobile View](https://github.com/user-attachments/assets/16e531d8-60d1-41f3-80e3-ff63d2840a7c)
+*Responsive design perfectly adapted for mobile devices*
+
+> **Note**: Screenshots show the application structure. In production with proper CDN access, the interface includes beautiful Tailwind CSS styling, Google Fonts (Outfit), and Lucide icons for a polished, modern look.
+
 ## 🌟 Features
 
 - **Automated Data Scraping**: Automatically scrapes college website for latest updates, exam notices, syllabus, and department information

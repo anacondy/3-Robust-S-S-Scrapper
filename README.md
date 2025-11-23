@@ -22,10 +22,18 @@ A robust web scraper and student resource portal for SS Jain Subodh PG College. 
 
 - **Automated Data Scraping**: Automatically scrapes college website for latest updates, exam notices, syllabus, and department information
 - **Daily Updates**: Scheduled to run at 3:07 AM daily via GitHub Actions
+- **Advanced Search with SQLite**: Lightning-fast full-text search with FTS5 technology
+  - Search by year, semester, subject, content type
+  - Automatic metadata extraction from document titles
+  - Combined filter support (e.g., "Physics PDFs from Semester II 2024")
+  - Sub-millisecond search performance
+- **Fast PDF Viewing**: Optimized PDF loading with pikepdf
+  - PDF linearization for instant first-page display
+  - Automatic compression and caching
+  - Progressive loading for large documents
 - **Mobile-First Design**: Optimized for mobile devices including 16:9 and 20:9 aspect ratios
 - **Responsive UI**: Beautiful, modern interface using Tailwind CSS
 - **Fast Loading**: Cached data for quick access
-- **Search Functionality**: Quick search across all scraped content
 - **GitHub Pages Deployment**: Static hosting with automatic updates
 - **Cross-Platform**: Works on desktop and mobile browsers
 
@@ -65,6 +73,7 @@ A robust web scraper and student resource portal for SS Jain Subodh PG College. 
 | requests | 2.31.0 | HTTP library for web scraping |
 | beautifulsoup4 | 4.12.2 | HTML parsing library |
 | urllib3 | 2.1.0 | HTTP client with SSL support |
+| pikepdf | 8.7.1 | PDF optimization and fast viewing |
 
 ### System Requirements
 - **Python**: 3.10 or higher
@@ -113,7 +122,11 @@ Visit `http://127.0.0.1:5000` in your browser.
 │   └── index.html                   # Main HTML template
 ├── app.py                           # Flask application (local dev)
 ├── scraper.py                       # Standalone scraper script
+├── database.py                      # SQLite search database module
+├── pdf_handler.py                   # PDF optimization module
+├── test_search.py                   # Test suite for search features
 ├── data.json                        # Scraped data cache
+├── SEARCH_DOCUMENTATION.md          # Advanced search feature docs
 ├── requirements.txt                 # Python dependencies
 ├── .gitignore                       # Git ignore rules
 └── README.md                        # This file
@@ -143,7 +156,29 @@ Visit `http://127.0.0.1:5000` in your browser.
 - **Purpose**: Main web interface
 - **Used By**: Flask app (local) and GitHub Pages (static)
 - **What It Does**: Displays scraped data in a beautiful, responsive interface
-- **Special Features**: Mobile-optimized, search functionality, live updates
+- **Special Features**: Mobile-optimized, advanced search with filters, live updates
+
+#### `database.py`
+- **Purpose**: SQLite database module with full-text search (FTS5)
+- **What It Does**: 
+  - Stores all scraped content in a searchable database
+  - Automatically extracts metadata (years, semesters, subjects, etc.)
+  - Provides advanced search API with multiple filters
+  - Sub-millisecond search performance
+- **When To Use**: Automatically used by app.py and scraper.py
+
+#### `pdf_handler.py`
+- **Purpose**: PDF optimization and fast viewing module
+- **What It Does**:
+  - Downloads and caches PDFs
+  - Optimizes PDFs using pikepdf (linearization, compression)
+  - Enables fast web viewing (progressive loading)
+- **When To Use**: Automatically used when viewing PDFs through the app
+
+#### `test_search.py`
+- **Purpose**: Test suite for search functionality
+- **What It Does**: Validates database operations, search, filters, and metadata extraction
+- **When To Use**: Run with `python test_search.py` to verify search features
 
 #### `.github/workflows/scrape-and-deploy.yml`
 - **Purpose**: GitHub Actions workflow configuration
@@ -151,6 +186,7 @@ Visit `http://127.0.0.1:5000` in your browser.
 - **What It Does**: 
   - Runs scraper daily at 3:07 AM UTC
   - Updates `data.json` with fresh data
+  - Populates search database
   - Deploys to GitHub Pages
   - Commits changes back to repository
 
@@ -159,6 +195,34 @@ Visit `http://127.0.0.1:5000` in your browser.
 - **Used By**: pip, virtual environments, deployment platforms
 - **What It Does**: Lists all required Python packages with versions
 - **Format**: One package per line with version pinning
+
+## 🔍 Advanced Search Features
+
+The application includes a powerful search system with SQLite FTS5 (Full-Text Search). See [SEARCH_DOCUMENTATION.md](SEARCH_DOCUMENTATION.md) for detailed information.
+
+### Quick Examples
+
+- **Search by year**: `2024` or `calendar 2024`
+- **Search by semester**: `semester II` or `second semester`
+- **Search by subject**: `physics` or `chemistry syllabus`
+- **Search by type**: Filter PDFs only or links only
+- **Combined search**: `physics 2024 semester II` - finds Physics materials from Semester II 2024
+
+### API Endpoints
+
+- `/api/search` - Advanced search with filters
+- `/api/filters` - Get available filter options
+- `/api/pdf/view` - Optimized PDF viewer
+- `/api/pdf/info` - PDF metadata
+
+### Features
+
+- ⚡ Sub-millisecond search on thousands of documents
+- 🎯 Automatic metadata extraction from titles
+- 🔄 Combined filter support
+- 📱 Mobile-friendly advanced search UI
+- 💾 Smart caching for PDFs
+- 🚀 PDF linearization for instant preview
 
 ## 🌍 Deployment Platforms
 

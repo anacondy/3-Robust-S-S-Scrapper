@@ -3,8 +3,11 @@ import json
 import requests
 import urllib.parse
 import time
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request, send_file
 from bs4 import BeautifulSoup
+from database import get_db
+from pdf_handler import get_pdf_handler
+import io
 
 # Initialize Flask App
 app = Flask(__name__)
@@ -36,6 +39,13 @@ def save_data(data):
     """Cache data to prevent spamming the college server."""
     with open(DATA_FILE, 'w') as f:
         json.dump(data, f, indent=4)
+    
+    # Also populate database for search
+    try:
+        db = get_db()
+        db.populate_from_json(data)
+    except Exception as e:
+        print(f"Error populating database: {e}")
 
 
 def load_data():
@@ -180,11 +190,147 @@ def refresh():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+@app.route('/api/search')
+def search():
+    """
+    Advanced search endpoint
+    Query params:
+        - q: Search query
+        - type: Filter by content_type (pdf/link)
+        - section: Filter by section
+        - year: Filter by year
+        - semester: Filter by semester
+        - subject: Filter by subject
+        - limit: Max results (default 100)
+    """
+    try:
+        db = get_db()
+        
+        query = request.args.get('q', '')
+        content_type = request.args.get('type')
+        section = request.args.get('section')
+        year = request.args.get('year', type=int)
+        semester = request.args.get('semester')
+        subject = request.args.get('subject')
+        limit = request.args.get('limit', 100, type=int)
+        
+        results = db.search(
+            query=query,
+            content_type=content_type,
+            section=section,
+            year=year,
+            semester=semester,
+            subject=subject,
+            limit=limit
+        )
+        
+        return jsonify({
+            "status": "success",
+            "count": len(results),
+            "results": results
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/filters')
+def get_filters():
+    """Get available filter options"""
+    try:
+        db = get_db()
+        filters = db.get_filters()
+        return jsonify({"status": "success", "filters": filters})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/pdf/view')
+def view_pdf():
+    """
+    Optimized PDF viewer endpoint
+    Query params:
+        - url: PDF URL to fetch and optimize
+    """
+    try:
+        pdf_url = request.args.get('url')
+        if not pdf_url:
+            return jsonify({"status": "error", "message": "URL parameter required"}), 400
+        
+        # Validate URL is from trusted domain (college website)
+        allowed_domains = ['subodhpgcollege.com', 'www.subodhpgcollege.com']
+        from urllib.parse import urlparse
+        parsed_url = urlparse(pdf_url)
+        
+        if parsed_url.netloc not in allowed_domains:
+            return jsonify({
+                "status": "error", 
+                "message": "PDF URL must be from subodhpgcollege.com"
+            }), 403
+        
+        pdf_handler = get_pdf_handler()
+        pdf_bytes = pdf_handler.get_pdf(pdf_url, optimize=True)
+        
+        if not pdf_bytes:
+            return jsonify({"status": "error", "message": "Failed to fetch PDF"}), 404
+        
+        return send_file(
+            io.BytesIO(pdf_bytes),
+            mimetype='application/pdf',
+            as_attachment=False,
+            download_name='document.pdf'
+        )
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/pdf/info')
+def pdf_info():
+    """Get PDF metadata"""
+    try:
+        pdf_url = request.args.get('url')
+        if not pdf_url:
+            return jsonify({"status": "error", "message": "URL parameter required"}), 400
+        
+        # Validate URL is from trusted domain
+        allowed_domains = ['subodhpgcollege.com', 'www.subodhpgcollege.com']
+        from urllib.parse import urlparse
+        parsed_url = urlparse(pdf_url)
+        
+        if parsed_url.netloc not in allowed_domains:
+            return jsonify({
+                "status": "error",
+                "message": "PDF URL must be from subodhpgcollege.com"
+            }), 403
+            return jsonify({"status": "error", "message": "URL parameter required"}), 400
+        
+        pdf_handler = get_pdf_handler()
+        info = pdf_handler.get_pdf_info(pdf_url)
+        
+        if not info:
+            return jsonify({"status": "error", "message": "Failed to get PDF info"}), 404
+        
+        return jsonify({"status": "success", "info": info})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
 if __name__ == "__main__":
     # Suppress SSL warnings in console
     import urllib3
 
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+    # Initialize database if data.json exists
+    if os.path.exists(DATA_FILE):
+        print("Initializing search database...")
+        try:
+            data = load_data()
+            if data:
+                db = get_db()
+                db.populate_from_json(data)
+                print("Database initialized successfully!")
+        except Exception as e:
+            print(f"Warning: Could not initialize database: {e}")
 
     print("Server is running. Open http://127.0.0.1:5000 in your browser.")
     app.run(debug=True, port=5000)

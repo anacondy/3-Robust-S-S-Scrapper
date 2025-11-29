@@ -254,7 +254,7 @@
             showLoader();
             try {
                 // Add timestamp to prevent browser caching
-                const response = await fetch(`data.json?t=${new Date().getTime()}`);
+                const response = await fetch(`/api/data?t=${new Date().getTime()}`);
 
                 if (!response.ok) throw new Error(`Server Error: ${response.status}`);
 

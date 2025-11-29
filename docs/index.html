@@ -99,7 +99,7 @@
 
         <!-- Error Container with Offline GIF -->
         <div id="error-container" class="hidden mb-6 p-6 rounded-lg bg-red-50 border border-red-200 text-red-700 flex flex-col items-center gap-4">
-            <img src="{{ url_for('static', filename='offline.gif') }}" alt="Offline" class="w-48 h-48 object-contain rounded-lg">
+            <img src="./offline.gif" alt="Offline" class="w-48 h-48 object-contain rounded-lg">
             <div class="text-center">
                 <h3 class="font-bold text-lg flex items-center justify-center gap-2">
                     <i data-lucide="alert-circle" class="h-6 w-6"></i>
@@ -253,8 +253,9 @@
         async function loadData() {
             showLoader();
             try {
+                // Use relative path for GitHub Pages compatibility
                 // Add timestamp to prevent browser caching
-                const response = await fetch(`/api/data?t=${new Date().getTime()}`);
+                const response = await fetch(`./api/data.json?t=${new Date().getTime()}`);
 
                 if (!response.ok) throw new Error(`Server Error: ${response.status}`);
 
@@ -265,12 +266,15 @@
                 allData = json.data;
                 render(allData);
                 showContent();
+                
+                // Extract filter options from loaded data
+                extractFiltersFromData(allData);
 
             } catch (err) {
                 console.error(err);
-                let userMsg = "Could not connect to the local server.";
+                let userMsg = "Could not load data.";
                 if(err.message.includes("Failed to fetch")) {
-                    userMsg = "Server is not running. Run 'python app.py' in your terminal.";
+                    userMsg = "Network error. Please check your connection.";
                 } else {
                     userMsg = err.message;
                 }
@@ -282,7 +286,8 @@
             const btn = document.getElementById('refresh-btn');
             btn.classList.add('animate-spin');
             try {
-                const response = await fetch('/api/refresh');
+                // On static site, just reload the data
+                const response = await fetch(`./api/data.json?t=${new Date().getTime()}`);
                 const json = await response.json();
                 if(json.status === 'success') {
                     allData = json.data;
@@ -379,19 +384,54 @@
         // --- Advanced Search Logic ---
         let searchTimeout = null;
         let availableFilters = null;
+        
+        // Constants for Roman numeral conversion
+        const ROMAN_TO_NUM = { 'I': '1', 'II': '2', 'III': '3', 'IV': '4', 'V': '5', 'VI': '6' };
 
-        // Load filters on startup
-        async function loadFilters() {
-            try {
-                const response = await fetch('/api/filters');
-                const json = await response.json();
-                if (json.status === 'success') {
-                    availableFilters = json.filters;
-                    populateFilterDropdowns();
-                }
-            } catch (e) {
-                console.error('Failed to load filters:', e);
+        // Extract filter options from loaded data
+        function extractFiltersFromData(data) {
+            if (!data || !data.sections) return;
+            
+            availableFilters = {
+                sections: Object.keys(data.sections).filter(s => s !== 'Latest_Updates'),
+                years: [],
+                semesters: []
+            };
+            
+            // Extract years and semesters from titles
+            const yearPattern = /\b(20\d{2})\b/;
+            const semPattern = /\b(?:sem(?:ester)?[\s\-]*)?([IVX]+|[1-6])\b/i;
+            const foundYears = new Set();
+            const foundSems = new Set();
+            
+            for (const section of Object.values(data.sections)) {
+                if (Array.isArray(section)) continue;
+                if (!section.pdfs && !section.links) continue;
+                
+                [...(section.pdfs || []), ...(section.links || [])].forEach(item => {
+                    const title = item.title || '';
+                    const yearMatch = title.match(yearPattern);
+                    if (yearMatch) foundYears.add(yearMatch[1]);
+                    
+                    const semMatch = title.match(semPattern);
+                    if (semMatch) {
+                        const sem = semMatch[1].toUpperCase();
+                        foundSems.add(ROMAN_TO_NUM[sem] || sem);
+                    }
+                });
             }
+            
+            availableFilters.years = Array.from(foundYears).sort().reverse();
+            availableFilters.semesters = Array.from(foundSems).sort();
+            
+            populateFilterDropdowns();
+        }
+        
+        // Helper function to check if item matches filters
+        function matchesFilters(title, yearFilter, semesterFilter) {
+            if (yearFilter && !title.includes(yearFilter)) return false;
+            if (semesterFilter && !title.includes(semesterFilter) && !title.includes(`sem ${semesterFilter}`) && !title.includes(`semester ${semesterFilter}`)) return false;
+            return true;
         }
 
         function populateFilterDropdowns() {
@@ -432,9 +472,9 @@
             lucide.createIcons();
         });
 
-        // Perform advanced search
-        async function performSearch() {
-            const query = document.getElementById('search-input').value.trim();
+        // Perform client-side search (for static GitHub Pages)
+        function performSearch() {
+            const query = document.getElementById('search-input').value.trim().toLowerCase();
             
             // If no query and no filters, show all data
             if (!query && !hasActiveFilters()) {
@@ -443,33 +483,62 @@
                 return;
             }
 
-            try {
-                const params = new URLSearchParams();
-                if (query) params.append('q', query);
+            const typeFilter = document.getElementById('filter-type').value;
+            const sectionFilter = document.getElementById('filter-section').value;
+            const yearFilter = document.getElementById('filter-year').value;
+            const semesterFilter = document.getElementById('filter-semester').value;
+            
+            const results = [];
+            const normalizedQuery = normalizeSearchText(query);
+            
+            // Search through all sections
+            for (const [sectionName, sectionData] of Object.entries(allData.sections)) {
+                if (sectionName === 'Latest_Updates') continue;
+                if (sectionFilter && sectionName !== sectionFilter) continue;
                 
-                const type = document.getElementById('filter-type').value;
-                if (type) params.append('type', type);
+                if (Array.isArray(sectionData)) continue;
+                if (!sectionData.pdfs && !sectionData.links) continue;
                 
-                const section = document.getElementById('filter-section').value;
-                if (section) params.append('section', section);
-                
-                const year = document.getElementById('filter-year').value;
-                if (year) params.append('year', year);
-                
-                const semester = document.getElementById('filter-semester').value;
-                if (semester) params.append('semester', semester);
-
-                const response = await fetch(`/api/search?${params}`);
-                const json = await response.json();
-
-                if (json.status === 'success') {
-                    renderSearchResults(json.results);
-                    document.getElementById('search-count').textContent = 
-                        `${json.count} result${json.count !== 1 ? 's' : ''} found`;
+                // Search PDFs
+                if (!typeFilter || typeFilter === 'pdf') {
+                    (sectionData.pdfs || []).forEach(item => {
+                        const title = (item.title || '').toLowerCase();
+                        const normalizedTitle = normalizeSearchText(title);
+                        
+                        if (!query || title.includes(query) || normalizedTitle.includes(normalizedQuery)) {
+                            if (!matchesFilters(title, yearFilter, semesterFilter)) return;
+                            
+                            results.push({
+                                ...item,
+                                section: sectionName,
+                                content_type: 'pdf'
+                            });
+                        }
+                    });
                 }
-            } catch (e) {
-                console.error('Search failed:', e);
+                
+                // Search Links
+                if (!typeFilter || typeFilter === 'link') {
+                    (sectionData.links || []).forEach(item => {
+                        const title = (item.title || '').toLowerCase();
+                        const normalizedTitle = normalizeSearchText(title);
+                        
+                        if (!query || title.includes(query) || normalizedTitle.includes(normalizedQuery)) {
+                            if (!matchesFilters(title, yearFilter, semesterFilter)) return;
+                            
+                            results.push({
+                                ...item,
+                                section: sectionName,
+                                content_type: 'link'
+                            });
+                        }
+                    });
+                }
             }
+            
+            renderSearchResults(results);
+            document.getElementById('search-count').textContent = 
+                `${results.length} result${results.length !== 1 ? 's' : ''} found`;
         }
 
         function hasActiveFilters() {
@@ -528,11 +597,9 @@
                     
                     const metaText = metadata.length ? ` <span class="text-xs text-slate-400">(${metadata.join(', ')})</span>` : '';
                     
-                    // Use fast PDF viewer endpoint
-                    const fastUrl = `/api/pdf/view?url=${encodeURIComponent(pdf.url)}`;
-                    
+                    // Use direct PDF URL for static site
                     contentHTML += `
-                        <a href="${fastUrl}" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
+                        <a href="${pdf.url}" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 border border-transparent hover:border-slate-200 transition group">
                             <i data-lucide="file" class="h-4 w-4 text-slate-400 group-hover:text-red-500"></i>
                             <span class="text-sm text-slate-600 group-hover:text-slate-900 truncate">${pdf.title}${metaText}</span>
                         </a>
@@ -659,9 +726,8 @@
             }
         });
 
-        // Start
+        // Start - load data (filters will be extracted from data)
         loadData();
-        loadFilters();
     </script>
 </body>
 </html>

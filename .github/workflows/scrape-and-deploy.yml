@@ -44,10 +44,13 @@ jobs:
       - name: Copy files to docs directory
         run: |
           mkdir -p docs/api
-          cp -r templates/index.html docs/
+          # Copy data.json to docs
           cp data.json docs/
+          # Copy static assets
+          cp static/offline.gif docs/ 2>/dev/null || true
           # Create API endpoint JSON using Python for proper JSON handling
           python -c "import json; data=json.load(open('data.json')); json.dump({'status':'success','data':data}, open('docs/api/data.json','w'), indent=2)"
+          # Note: docs/index.html is maintained as a static GitHub Pages version
       
       - name: Commit and push updated data
         run: |

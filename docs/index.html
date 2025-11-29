@@ -384,12 +384,9 @@
         // --- Advanced Search Logic ---
         let searchTimeout = null;
         let availableFilters = null;
-
-        // Load filters from static data
-        async function loadFilters() {
-            // Wait for data to load, then extract filter options
-            // Filters will be populated after data loads
-        }
+        
+        // Constants for Roman numeral conversion
+        const ROMAN_TO_NUM = { 'I': '1', 'II': '2', 'III': '3', 'IV': '4', 'V': '5', 'VI': '6' };
 
         // Extract filter options from loaded data
         function extractFiltersFromData(data) {
@@ -419,8 +416,7 @@
                     const semMatch = title.match(semPattern);
                     if (semMatch) {
                         const sem = semMatch[1].toUpperCase();
-                        const romanToNum = { 'I': '1', 'II': '2', 'III': '3', 'IV': '4', 'V': '5', 'VI': '6' };
-                        foundSems.add(romanToNum[sem] || sem);
+                        foundSems.add(ROMAN_TO_NUM[sem] || sem);
                     }
                 });
             }
@@ -429,6 +425,13 @@
             availableFilters.semesters = Array.from(foundSems).sort();
             
             populateFilterDropdowns();
+        }
+        
+        // Helper function to check if item matches filters
+        function matchesFilters(title, yearFilter, semesterFilter) {
+            if (yearFilter && !title.includes(yearFilter)) return false;
+            if (semesterFilter && !title.includes(semesterFilter) && !title.includes(`sem ${semesterFilter}`) && !title.includes(`semester ${semesterFilter}`)) return false;
+            return true;
         }
 
         function populateFilterDropdowns() {
@@ -503,10 +506,7 @@
                         const normalizedTitle = normalizeSearchText(title);
                         
                         if (!query || title.includes(query) || normalizedTitle.includes(normalizedQuery)) {
-                            // Check year filter
-                            if (yearFilter && !title.includes(yearFilter)) return;
-                            // Check semester filter
-                            if (semesterFilter && !title.includes(semesterFilter) && !title.includes(`sem ${semesterFilter}`) && !title.includes(`semester ${semesterFilter}`)) return;
+                            if (!matchesFilters(title, yearFilter, semesterFilter)) return;
                             
                             results.push({
                                 ...item,
@@ -524,10 +524,7 @@
                         const normalizedTitle = normalizeSearchText(title);
                         
                         if (!query || title.includes(query) || normalizedTitle.includes(normalizedQuery)) {
-                            // Check year filter
-                            if (yearFilter && !title.includes(yearFilter)) return;
-                            // Check semester filter
-                            if (semesterFilter && !title.includes(semesterFilter) && !title.includes(`sem ${semesterFilter}`) && !title.includes(`semester ${semesterFilter}`)) return;
+                            if (!matchesFilters(title, yearFilter, semesterFilter)) return;
                             
                             results.push({
                                 ...item,
@@ -729,9 +726,8 @@
             }
         });
 
-        // Start
+        // Start - load data (filters will be extracted from data)
         loadData();
-        loadFilters();
     </script>
 </body>
 </html>

@@ -21,7 +21,7 @@ permissions:
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
-        environment: github-pages
+    environment: github-pages
     
     steps:
       - name: Checkout repository

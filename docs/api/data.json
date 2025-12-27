@@ -2,29 +2,3057 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2025-12-26 03:59:57"
+      "scraped_at": "2025-12-27 03:57:44"
     },
     "sections": {
-      "Latest_Updates": [],
+      "Latest_Updates": [
+        {
+          "text": "APPLY NEW ADMISSION 2025-26",
+          "link": "https://www.subodhpgcollege.com/admissions",
+          "is_new": false
+        },
+        {
+          "text": "SUBODH EXAMINATION PORTAL (ERP)",
+          "link": "https://www.subodhpgcollege.com/subodhexaminationportal",
+          "is_new": false
+        },
+        {
+          "text": "AboutGovernance & LegalGoverning CouncilCollege Management CouncilCollege Governing CouncilList of InstitutionsWelcome Note (Our Visionaries)PresidentHony. SecretaryConvener CollegeConvener MCA InstitutePrincipal's DeskCollege At A Glance [Why Subodh]Vision & MissionAffiliation/Accreditation/RecognitionInfrastructureKnowledge Center (Central Library)Training & Placement CellMOUs & CollaborationsSupport and Sustenance (Cells)Feedback FormDBT-Star College SchemeCollege KulgeetNews & Notifications",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Governance & LegalGoverning CouncilCollege Management CouncilCollege Governing CouncilList of Institutions",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Governing Council",
+          "link": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti",
+          "is_new": false
+        },
+        {
+          "text": "College Management Council",
+          "link": "https://www.subodhpgcollege.com/College_Management_Council",
+          "is_new": false
+        },
+        {
+          "text": "College Governing Council",
+          "link": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College",
+          "is_new": false
+        },
+        {
+          "text": "List of Institutions",
+          "link": "https://www.subodhpgcollege.com/List_of_Institutions",
+          "is_new": false
+        },
+        {
+          "text": "Welcome Note (Our Visionaries)PresidentHony. SecretaryConvener CollegeConvener MCA InstitutePrincipal's Desk",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Hony. Secretary",
+          "link": "https://www.subodhpgcollege.com/secretary_message",
+          "is_new": false
+        },
+        {
+          "text": "Convener College",
+          "link": "https://www.subodhpgcollege.com/convener_message",
+          "is_new": false
+        },
+        {
+          "text": "Convener MCA Institute",
+          "link": "https://www.subodhpgcollege.com/convener_mca_message",
+          "is_new": false
+        },
+        {
+          "text": "Principal's Desk",
+          "link": "https://www.subodhpgcollege.com/principal's_desk",
+          "is_new": false
+        },
+        {
+          "text": "College At A Glance [Why Subodh]",
+          "link": "https://www.subodhpgcollege.com/aboutus",
+          "is_new": false
+        },
+        {
+          "text": "Vision & Mission",
+          "link": "https://www.subodhpgcollege.com/vision_mission",
+          "is_new": false
+        }
+      ],
       "Exam Notices": {
-        "pdfs": [],
-        "links": [],
-        "error": true
+        "pdfs": [
+          {
+            "title": "College Kulgeet",
+            "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
+          },
+          {
+            "title": "Fees Structure",
+            "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
+          },
+          {
+            "title": "Prospectus 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
+          },
+          {
+            "title": "Admission Process",
+            "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
+          },
+          {
+            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
+          },
+          {
+            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
+          },
+          {
+            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
+          },
+          {
+            "title": "Research in Subodh",
+            "url": "https://www.subodhpgcollege.com/pdf/research.pdf"
+          },
+          {
+            "title": "Central Lab Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Lab-Brochure.pdf"
+          },
+          {
+            "title": "Central Lab Facility",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Research-Lab-Facility.pdf"
+          },
+          {
+            "title": "Policies, SOP & Manuals",
+            "url": "https://www.subodhpgcollege.com/SSR-2024/INSTITUTIONAL_POLICIES_MANUALS.pdf"
+          },
+          {
+            "title": "Academic Committees",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic_Committees.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          },
+          {
+            "title": "Academic Calendar 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2025-26.pdf"
+          },
+          {
+            "title": "Academic Calendar 2024-25",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2024-25.pdf"
+          },
+          {
+            "title": "Academic Calendar 2023-24",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2023-24.pdf"
+          },
+          {
+            "title": "Academic Calendar 2022-23",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2022-23.pdf"
+          },
+          {
+            "title": "Academic Calendar 2021-22",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic Calender-2021-22.pdf"
+          },
+          {
+            "title": "Academic Calendar 2020-21",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2020-21.pdf"
+          },
+          {
+            "title": "Academic Calendar 2019-20",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2019-20.pdf"
+          },
+          {
+            "title": "Academic Calendar 2018-19",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2018-19.pdf"
+          },
+          {
+            "title": "June 2025",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_June_2025.pdf"
+          },
+          {
+            "title": "October 2024",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_October-2024.pdf"
+          },
+          {
+            "title": "November 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_Nov_2023.pdf"
+          },
+          {
+            "title": "April 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_April 2023.pdf"
+          },
+          {
+            "title": "October 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-October-2022.pdf"
+          },
+          {
+            "title": "March 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Newsletter-March-2022.pdf"
+          },
+          {
+            "title": "September 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-September2021.pdf"
+          },
+          {
+            "title": "March 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-March-2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter July 2020.pdf"
+          },
+          {
+            "title": "February 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Feb-2020.pdf"
+          },
+          {
+            "title": "October 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Oct-2019.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2019.pdf"
+          },
+          {
+            "title": "January 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJanuaryl2019.pdf"
+          },
+          {
+            "title": "October 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterOctoberl2018.pdf"
+          },
+          {
+            "title": "April 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2018.pdf"
+          },
+          {
+            "title": "january 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJan2018.pdf"
+          },
+          {
+            "title": "September 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterSept2017.pdf"
+          },
+          {
+            "title": "March 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterMarch2017.pdf"
+          },
+          {
+            "title": "October 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_October_2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_june_july_2020.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_april_2019.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-IV",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-2024-Certificale-of-Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-III",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-Certificate.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-II",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-I",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation2004.pdf"
+          },
+          {
+            "title": "Self Study Report (SSR) for 4th Cycle",
+            "url": "https://www.subodhpgcollege.com/pdf/SS-Subodh-2024.pdf"
+          },
+          {
+            "title": "Examination Ordinance",
+            "url": "https://www.subodhpgcollege.com/pdf/Examination-Ordinance-2024.pdf"
+          },
+          {
+            "title": "Subodh in News",
+            "url": "https://www.subodhpgcollege.com/pdf/news&media.pdf"
+          },
+          {
+            "title": "ISO Certificate (21001:2018)",
+            "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "Exam Procedure",
+            "url": "https://www.subodhpgcollege.com/pdf/exam-procedure.pdf"
+          },
+          {
+            "title": "Exam Ordinance (Under the National Education Policy 2020)",
+            "url": "https://www.subodhpgcollege.com/pdf/Examination-Ordinance-2024.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          }
+        ],
+        "links": [
+          {
+            "title": "APPLY NEW ADMISSION 2025-26",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "SUBODH EXAMINATION PORTAL (ERP)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Governance & Legal",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti"
+          },
+          {
+            "title": "College Management Council",
+            "url": "https://www.subodhpgcollege.com/College_Management_Council"
+          },
+          {
+            "title": "College Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College"
+          },
+          {
+            "title": "List of Institutions",
+            "url": "https://www.subodhpgcollege.com/List_of_Institutions"
+          },
+          {
+            "title": "Welcome Note (Our Visionaries)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "President",
+            "url": "https://www.subodhpgcollege.com/president_message"
+          },
+          {
+            "title": "Hony. Secretary",
+            "url": "https://www.subodhpgcollege.com/secretary_message"
+          },
+          {
+            "title": "Convener College",
+            "url": "https://www.subodhpgcollege.com/convener_message"
+          },
+          {
+            "title": "Convener MCA Institute",
+            "url": "https://www.subodhpgcollege.com/convener_mca_message"
+          },
+          {
+            "title": "Principal's Desk",
+            "url": "https://www.subodhpgcollege.com/principal's_desk"
+          },
+          {
+            "title": "College At A Glance [Why Subodh]",
+            "url": "https://www.subodhpgcollege.com/aboutus"
+          },
+          {
+            "title": "Vision & Mission",
+            "url": "https://www.subodhpgcollege.com/vision_mission"
+          },
+          {
+            "title": "Affiliation/Accreditation/Recognition",
+            "url": "https://www.subodhpgcollege.com/RecognitionandAccreditation"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Knowledge Center (Central Library)",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Training & Placement Cell",
+            "url": "https://www.subodhpgcollege.com/tpo-cell"
+          },
+          {
+            "title": "MOUs & Collaborations",
+            "url": "https://www.subodhpgcollege.com/MOUs"
+          },
+          {
+            "title": "Support and Sustenance (Cells)",
+            "url": "https://www.subodhpgcollege.com/Campus_Cells"
+          },
+          {
+            "title": "Feedback Form",
+            "url": "https://www.subodhpgcollege.com/feedback_forms"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Admission",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Programs Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Apply Online (Session 2025-26)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Merit List 2025-26",
+            "url": "https://www.subodhpgcollege.com/Merit-List"
+          },
+          {
+            "title": "Class Wise Time-table",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "Admission News",
+            "url": "https://www.subodhpgcollege.com/admission_news"
+          },
+          {
+            "title": "Academic",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Undergraduate (UG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Postgraduate (PG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "Specialization Programs",
+            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+          },
+          {
+            "title": "Value Added Courses",
+            "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
+          },
+          {
+            "title": "Generic Elective Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
+          },
+          {
+            "title": "Skill Enhancement Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
+          },
+          {
+            "title": "Certification Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "Diploma Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "P.G. Diploma & Other",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "ISTEM Central Research Lab",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Best Practices",
+            "url": "https://www.subodhpgcollege.com/best_practices"
+          },
+          {
+            "title": "Academic Calendar 2018-2026",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Journals",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh News Letter",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Times",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "IQAC (NAAC)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Accreditation by NAAC [Certificate]",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "About IQAC",
+            "url": "https://www.subodhpgcollege.com/SubodhIQAC"
+          },
+          {
+            "title": "IQAC Committee, MOM & Action Taken Reports",
+            "url": "https://www.subodhpgcollege.com/minutes-of-IQAC"
+          },
+          {
+            "title": "AQAR (Annual Quality Assurance Report)",
+            "url": "https://www.subodhpgcollege.com/subodhaqar"
+          },
+          {
+            "title": "Examination Portal",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examination Time-table 2025",
+            "url": "https://www.subodhpgcollege.com/Time-table"
+          },
+          {
+            "title": "Assignments 2025",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
+            "title": "Fill CIA Awards/Marks (All UG/PG)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examinations Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Choice Based Credit System",
+            "url": "https://www.subodhpgcollege.com/CBCS"
+          },
+          {
+            "title": "Examination News & Notification",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Faculty/Staff Members",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "NEP 2020",
+            "url": "https://www.subodhpgcollege.com/NEP2020"
+          },
+          {
+            "title": "Gallery",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Activities & Events 2025-26",
+            "url": "https://www.subodhpgcollege.com/activities2025-26"
+          },
+          {
+            "title": "Activities & Events 2024-25",
+            "url": "https://www.subodhpgcollege.com/activities2025"
+          },
+          {
+            "title": "Activities & Events 2023-24",
+            "url": "https://www.subodhpgcollege.com/activities2023-24"
+          },
+          {
+            "title": "Activities & Events 2022-23",
+            "url": "https://www.subodhpgcollege.com/activities2022-23"
+          },
+          {
+            "title": "Upcoming Event 2025",
+            "url": "https://www.subodhpgcollege.com/event_news"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Campus Building",
+            "url": "https://www.subodhpgcollege.com/college-campus"
+          },
+          {
+            "title": "Library",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Laboratories",
+            "url": "https://www.subodhpgcollege.com/laboratories"
+          },
+          {
+            "title": "Smart Classroom",
+            "url": "https://www.subodhpgcollege.com/SmartClassRoom"
+          },
+          {
+            "title": "Indoor-Outdoor facility",
+            "url": "https://www.subodhpgcollege.com/indoor-outdoor-facility"
+          },
+          {
+            "title": "Front Desk (Reception)",
+            "url": "https://www.subodhpgcollege.com/Reception"
+          },
+          {
+            "title": "More Aminities",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Subodh In Sports (Gallery)",
+            "url": "https://www.subodhpgcollege.com/sports_gallery"
+          },
+          {
+            "title": "Subodh In NCC (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NCC_gallery"
+          },
+          {
+            "title": "Subodh In NSS (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NSS_gallery"
+          },
+          {
+            "title": "Subodh In Rovers (Gallery)",
+            "url": "https://www.subodhpgcollege.com/rovers-rangers"
+          },
+          {
+            "title": "Red Ribbon Club (Gallery)",
+            "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Scholarship",
+            "url": "https://www.subodhpgcollege.com/scholarships"
+          },
+          {
+            "title": "DBT FIST Scheme",
+            "url": "https://www.subodhpgcollege.com/DBT-FIST-SCHEME"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Contact Us",
+            "url": "https://www.subodhpgcollege.com/Contact_Us"
+          },
+          {
+            "title": "SUBODH PORTAL",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Examination Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Examination News & Notification",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Exam Rules & Regulations",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Main/Back Examination Time-table 2025",
+            "url": "https://www.subodhpgcollege.com/time-table"
+          },
+          {
+            "title": "admin@subodhpgcollege.com",
+            "url": "mailto:admin@subodhpgcollege.com"
+          },
+          {
+            "title": "Admissions",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "Programmes Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus UG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Syllabus PG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "Research Projects",
+            "url": "https://www.subodhpgcollege.com/Research-Projects"
+          },
+          {
+            "title": "Privacy Policy",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Terms & Conditions",
+            "url": "https://www.subodhpgcollege.com/"
+          }
+        ],
+        "error": false
       },
       "Syllabus (UG)": {
-        "pdfs": [],
-        "links": [],
-        "error": true
+        "pdfs": [
+          {
+            "title": "College Kulgeet",
+            "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
+          },
+          {
+            "title": "Fees Structure",
+            "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
+          },
+          {
+            "title": "Prospectus 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
+          },
+          {
+            "title": "Admission Process",
+            "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
+          },
+          {
+            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
+          },
+          {
+            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
+          },
+          {
+            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
+          },
+          {
+            "title": "Research in Subodh",
+            "url": "https://www.subodhpgcollege.com/pdf/research.pdf"
+          },
+          {
+            "title": "Central Lab Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Lab-Brochure.pdf"
+          },
+          {
+            "title": "Central Lab Facility",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Research-Lab-Facility.pdf"
+          },
+          {
+            "title": "Policies, SOP & Manuals",
+            "url": "https://www.subodhpgcollege.com/SSR-2024/INSTITUTIONAL_POLICIES_MANUALS.pdf"
+          },
+          {
+            "title": "Academic Committees",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic_Committees.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          },
+          {
+            "title": "Academic Calendar 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2025-26.pdf"
+          },
+          {
+            "title": "Academic Calendar 2024-25",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2024-25.pdf"
+          },
+          {
+            "title": "Academic Calendar 2023-24",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2023-24.pdf"
+          },
+          {
+            "title": "Academic Calendar 2022-23",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2022-23.pdf"
+          },
+          {
+            "title": "Academic Calendar 2021-22",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic Calender-2021-22.pdf"
+          },
+          {
+            "title": "Academic Calendar 2020-21",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2020-21.pdf"
+          },
+          {
+            "title": "Academic Calendar 2019-20",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2019-20.pdf"
+          },
+          {
+            "title": "Academic Calendar 2018-19",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2018-19.pdf"
+          },
+          {
+            "title": "June 2025",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_June_2025.pdf"
+          },
+          {
+            "title": "October 2024",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_October-2024.pdf"
+          },
+          {
+            "title": "November 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_Nov_2023.pdf"
+          },
+          {
+            "title": "April 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_April 2023.pdf"
+          },
+          {
+            "title": "October 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-October-2022.pdf"
+          },
+          {
+            "title": "March 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Newsletter-March-2022.pdf"
+          },
+          {
+            "title": "September 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-September2021.pdf"
+          },
+          {
+            "title": "March 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-March-2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter July 2020.pdf"
+          },
+          {
+            "title": "February 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Feb-2020.pdf"
+          },
+          {
+            "title": "October 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Oct-2019.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2019.pdf"
+          },
+          {
+            "title": "January 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJanuaryl2019.pdf"
+          },
+          {
+            "title": "October 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterOctoberl2018.pdf"
+          },
+          {
+            "title": "April 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2018.pdf"
+          },
+          {
+            "title": "january 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJan2018.pdf"
+          },
+          {
+            "title": "September 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterSept2017.pdf"
+          },
+          {
+            "title": "March 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterMarch2017.pdf"
+          },
+          {
+            "title": "October 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_October_2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_june_july_2020.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_april_2019.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-IV",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-2024-Certificale-of-Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-III",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-Certificate.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-II",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-I",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation2004.pdf"
+          },
+          {
+            "title": "Self Study Report (SSR) for 4th Cycle",
+            "url": "https://www.subodhpgcollege.com/pdf/SS-Subodh-2024.pdf"
+          },
+          {
+            "title": "Examination Ordinance",
+            "url": "https://www.subodhpgcollege.com/pdf/Examination-Ordinance-2024.pdf"
+          },
+          {
+            "title": "Subodh in News",
+            "url": "https://www.subodhpgcollege.com/pdf/news&media.pdf"
+          },
+          {
+            "title": "ISO Certificate (21001:2018)",
+            "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_hindi_New_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_SEC_English_New_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Maths_MDM(Multidisciplinary).pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_ABST_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_BADM_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_EAFM_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Botany_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Physics_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Biotechnology_NEP_2025-28.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Zoology_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Microbiology_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_Economics_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_psychology_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Chemistry_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Mathematics_FourYr_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Mathematics_ThreeYr_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_ComputerSci_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BABSc_Statistics_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BCA_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BBA_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BBA_HR_Finance_Marketing_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_History_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_History_Threeyr_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BABSc_Statistics_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_NGLISH_LITERATURE_New_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_Hindi_Lit_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_Sanskrit_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_Physical-Education_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_Sociology_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_BA-BscGeography_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_Geography_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_Political_Science_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/UG_syllabus-Public-Admin-2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/UG_syllabus-Indian-Music-2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/General_English_New_Oct2024.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_hindi_New_Oct2024.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Environmental_Studies_and_Sustainable_Development_New_Oct2024.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Elementary_Computer_Syllabus_New_Oct2024.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Mental_Ability_and_Reasoning_New_Oct2024.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_english_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_hindi_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_EVS_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_physics_wef_July2025.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_chemistry_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_BSc_Mathematics_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_bsc_statistics_wef_oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Geography_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_ComputerSci_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_zoology_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_botany_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_biotechnology_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/BSc_Microbiology_syllabus_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_psychology_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BSc-Economics-2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_BADM_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_abst_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_eafm_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_UG_English_Literature_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Hindi_Literature_2023-24-NEP.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_history_wef_2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_political_science_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_BSc_Mathematics_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BA-Economics-2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Geography_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_bsc_statistics_wef_oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_public_admin_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_sociology_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_UG_Philosophy_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_phy_edu_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_Sanskrit_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_psychology_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/UG_syllabus-Indian-Music-2023-25.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bca_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bba_HR_Finance_Marketing_wef_Oct2023.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bba_Retail_Management_wef_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_english_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_hindi_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/bsc_PassCourse_2022-25.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_chemistry_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/BSc_Microbiology_syllabus_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_biotechnology_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BSc-Economics-2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_BADM_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_EAFM_pass_course2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_English_Literature_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Hindi_Literature_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BA-Economics-2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_sanskrit_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_sciology_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_UG_Philosophy_2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bca_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bba_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_english.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_general_hindi.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_EVS.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Elementary_Computer_Syllabus.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_physics.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_chemistry.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_zoology.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_botany_update.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_botany_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_biotechnology.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/BSc_Microbiology_syllabus.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_maths_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_business_admin.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_abst.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_eafm_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Hindi_Literature.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_English_Literature.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_history.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_political_science.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bsc_ba_economics_new.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus_Geography.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_bsc_statistics.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_public_admin.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BA_sociology.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_sciology.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_philosophy.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_sanskrit.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_phy_edu.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bca.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bba.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus_mental_ability_reasoning.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_ba_bsc_Psychology.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          }
+        ],
+        "links": [
+          {
+            "title": "APPLY NEW ADMISSION 2025-26",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "SUBODH EXAMINATION PORTAL (ERP)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Governance & Legal",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti"
+          },
+          {
+            "title": "College Management Council",
+            "url": "https://www.subodhpgcollege.com/College_Management_Council"
+          },
+          {
+            "title": "College Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College"
+          },
+          {
+            "title": "List of Institutions",
+            "url": "https://www.subodhpgcollege.com/List_of_Institutions"
+          },
+          {
+            "title": "Welcome Note (Our Visionaries)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "President",
+            "url": "https://www.subodhpgcollege.com/president_message"
+          },
+          {
+            "title": "Hony. Secretary",
+            "url": "https://www.subodhpgcollege.com/secretary_message"
+          },
+          {
+            "title": "Convener College",
+            "url": "https://www.subodhpgcollege.com/convener_message"
+          },
+          {
+            "title": "Convener MCA Institute",
+            "url": "https://www.subodhpgcollege.com/convener_mca_message"
+          },
+          {
+            "title": "Principal's Desk",
+            "url": "https://www.subodhpgcollege.com/principal's_desk"
+          },
+          {
+            "title": "College At A Glance [Why Subodh]",
+            "url": "https://www.subodhpgcollege.com/aboutus"
+          },
+          {
+            "title": "Vision & Mission",
+            "url": "https://www.subodhpgcollege.com/vision_mission"
+          },
+          {
+            "title": "Affiliation/Accreditation/Recognition",
+            "url": "https://www.subodhpgcollege.com/RecognitionandAccreditation"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Knowledge Center (Central Library)",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Training & Placement Cell",
+            "url": "https://www.subodhpgcollege.com/tpo-cell"
+          },
+          {
+            "title": "MOUs & Collaborations",
+            "url": "https://www.subodhpgcollege.com/MOUs"
+          },
+          {
+            "title": "Support and Sustenance (Cells)",
+            "url": "https://www.subodhpgcollege.com/Campus_Cells"
+          },
+          {
+            "title": "Feedback Form",
+            "url": "https://www.subodhpgcollege.com/feedback_forms"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Admission",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Programs Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Apply Online (Session 2025-26)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Merit List 2025-26",
+            "url": "https://www.subodhpgcollege.com/Merit-List"
+          },
+          {
+            "title": "Class Wise Time-table",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "Admission News",
+            "url": "https://www.subodhpgcollege.com/admission_news"
+          },
+          {
+            "title": "Academic",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Undergraduate (UG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Postgraduate (PG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "Specialization Programs",
+            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+          },
+          {
+            "title": "Value Added Courses",
+            "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
+          },
+          {
+            "title": "Generic Elective Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
+          },
+          {
+            "title": "Skill Enhancement Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
+          },
+          {
+            "title": "Certification Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "Diploma Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "P.G. Diploma & Other",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "ISTEM Central Research Lab",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Best Practices",
+            "url": "https://www.subodhpgcollege.com/best_practices"
+          },
+          {
+            "title": "Academic Calendar 2018-2026",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Journals",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh News Letter",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Times",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "IQAC (NAAC)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Accreditation by NAAC [Certificate]",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "About IQAC",
+            "url": "https://www.subodhpgcollege.com/SubodhIQAC"
+          },
+          {
+            "title": "IQAC Committee, MOM & Action Taken Reports",
+            "url": "https://www.subodhpgcollege.com/minutes-of-IQAC"
+          },
+          {
+            "title": "AQAR (Annual Quality Assurance Report)",
+            "url": "https://www.subodhpgcollege.com/subodhaqar"
+          },
+          {
+            "title": "Examination Portal",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examination Time-table 2025",
+            "url": "https://www.subodhpgcollege.com/Time-table"
+          },
+          {
+            "title": "Assignments 2025",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
+            "title": "Fill CIA Awards/Marks (All UG/PG)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examinations Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Choice Based Credit System",
+            "url": "https://www.subodhpgcollege.com/CBCS"
+          },
+          {
+            "title": "Examination News & Notification",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Faculty/Staff Members",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "NEP 2020",
+            "url": "https://www.subodhpgcollege.com/NEP2020"
+          },
+          {
+            "title": "Gallery",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Activities & Events 2025-26",
+            "url": "https://www.subodhpgcollege.com/activities2025-26"
+          },
+          {
+            "title": "Activities & Events 2024-25",
+            "url": "https://www.subodhpgcollege.com/activities2025"
+          },
+          {
+            "title": "Activities & Events 2023-24",
+            "url": "https://www.subodhpgcollege.com/activities2023-24"
+          },
+          {
+            "title": "Activities & Events 2022-23",
+            "url": "https://www.subodhpgcollege.com/activities2022-23"
+          },
+          {
+            "title": "Upcoming Event 2025",
+            "url": "https://www.subodhpgcollege.com/event_news"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Campus Building",
+            "url": "https://www.subodhpgcollege.com/college-campus"
+          },
+          {
+            "title": "Library",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Laboratories",
+            "url": "https://www.subodhpgcollege.com/laboratories"
+          },
+          {
+            "title": "Smart Classroom",
+            "url": "https://www.subodhpgcollege.com/SmartClassRoom"
+          },
+          {
+            "title": "Indoor-Outdoor facility",
+            "url": "https://www.subodhpgcollege.com/indoor-outdoor-facility"
+          },
+          {
+            "title": "Front Desk (Reception)",
+            "url": "https://www.subodhpgcollege.com/Reception"
+          },
+          {
+            "title": "More Aminities",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Subodh In Sports (Gallery)",
+            "url": "https://www.subodhpgcollege.com/sports_gallery"
+          },
+          {
+            "title": "Subodh In NCC (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NCC_gallery"
+          },
+          {
+            "title": "Subodh In NSS (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NSS_gallery"
+          },
+          {
+            "title": "Subodh In Rovers (Gallery)",
+            "url": "https://www.subodhpgcollege.com/rovers-rangers"
+          },
+          {
+            "title": "Red Ribbon Club (Gallery)",
+            "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Scholarship",
+            "url": "https://www.subodhpgcollege.com/scholarships"
+          },
+          {
+            "title": "DBT FIST Scheme",
+            "url": "https://www.subodhpgcollege.com/DBT-FIST-SCHEME"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Contact Us",
+            "url": "https://www.subodhpgcollege.com/Contact_Us"
+          },
+          {
+            "title": "admin@subodhpgcollege.com",
+            "url": "mailto:admin@subodhpgcollege.com"
+          },
+          {
+            "title": "Admissions",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "Programmes Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus UG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Syllabus PG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "Research Projects",
+            "url": "https://www.subodhpgcollege.com/Research-Projects"
+          },
+          {
+            "title": "Privacy Policy",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Terms & Conditions",
+            "url": "https://www.subodhpgcollege.com/"
+          }
+        ],
+        "error": false
       },
       "News & Events": {
-        "pdfs": [],
-        "links": [],
-        "error": true
+        "pdfs": [
+          {
+            "title": "College Kulgeet",
+            "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
+          },
+          {
+            "title": "Fees Structure",
+            "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
+          },
+          {
+            "title": "Prospectus 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
+          },
+          {
+            "title": "Admission Process",
+            "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
+          },
+          {
+            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
+          },
+          {
+            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
+          },
+          {
+            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
+          },
+          {
+            "title": "Research in Subodh",
+            "url": "https://www.subodhpgcollege.com/pdf/research.pdf"
+          },
+          {
+            "title": "Central Lab Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Lab-Brochure.pdf"
+          },
+          {
+            "title": "Central Lab Facility",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Research-Lab-Facility.pdf"
+          },
+          {
+            "title": "Policies, SOP & Manuals",
+            "url": "https://www.subodhpgcollege.com/SSR-2024/INSTITUTIONAL_POLICIES_MANUALS.pdf"
+          },
+          {
+            "title": "Academic Committees",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic_Committees.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          },
+          {
+            "title": "Academic Calendar 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2025-26.pdf"
+          },
+          {
+            "title": "Academic Calendar 2024-25",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2024-25.pdf"
+          },
+          {
+            "title": "Academic Calendar 2023-24",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2023-24.pdf"
+          },
+          {
+            "title": "Academic Calendar 2022-23",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2022-23.pdf"
+          },
+          {
+            "title": "Academic Calendar 2021-22",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic Calender-2021-22.pdf"
+          },
+          {
+            "title": "Academic Calendar 2020-21",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2020-21.pdf"
+          },
+          {
+            "title": "Academic Calendar 2019-20",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2019-20.pdf"
+          },
+          {
+            "title": "Academic Calendar 2018-19",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2018-19.pdf"
+          },
+          {
+            "title": "June 2025",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_June_2025.pdf"
+          },
+          {
+            "title": "October 2024",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_October-2024.pdf"
+          },
+          {
+            "title": "November 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_Nov_2023.pdf"
+          },
+          {
+            "title": "April 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_April 2023.pdf"
+          },
+          {
+            "title": "October 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-October-2022.pdf"
+          },
+          {
+            "title": "March 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Newsletter-March-2022.pdf"
+          },
+          {
+            "title": "September 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-September2021.pdf"
+          },
+          {
+            "title": "March 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-March-2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter July 2020.pdf"
+          },
+          {
+            "title": "February 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Feb-2020.pdf"
+          },
+          {
+            "title": "October 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Oct-2019.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2019.pdf"
+          },
+          {
+            "title": "January 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJanuaryl2019.pdf"
+          },
+          {
+            "title": "October 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterOctoberl2018.pdf"
+          },
+          {
+            "title": "April 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2018.pdf"
+          },
+          {
+            "title": "january 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJan2018.pdf"
+          },
+          {
+            "title": "September 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterSept2017.pdf"
+          },
+          {
+            "title": "March 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterMarch2017.pdf"
+          },
+          {
+            "title": "October 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_October_2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_june_july_2020.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_april_2019.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-IV",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-2024-Certificale-of-Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-III",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-Certificate.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-II",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-I",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation2004.pdf"
+          },
+          {
+            "title": "Self Study Report (SSR) for 4th Cycle",
+            "url": "https://www.subodhpgcollege.com/pdf/SS-Subodh-2024.pdf"
+          },
+          {
+            "title": "Examination Ordinance",
+            "url": "https://www.subodhpgcollege.com/pdf/Examination-Ordinance-2024.pdf"
+          },
+          {
+            "title": "Subodh in News",
+            "url": "https://www.subodhpgcollege.com/pdf/news&media.pdf"
+          },
+          {
+            "title": "ISO Certificate (21001:2018)",
+            "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "Download Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/upload/2025/RASCRTT2025.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          }
+        ],
+        "links": [
+          {
+            "title": "APPLY NEW ADMISSION 2025-26",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "SUBODH EXAMINATION PORTAL (ERP)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Governance & Legal",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti"
+          },
+          {
+            "title": "College Management Council",
+            "url": "https://www.subodhpgcollege.com/College_Management_Council"
+          },
+          {
+            "title": "College Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College"
+          },
+          {
+            "title": "List of Institutions",
+            "url": "https://www.subodhpgcollege.com/List_of_Institutions"
+          },
+          {
+            "title": "Welcome Note (Our Visionaries)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "President",
+            "url": "https://www.subodhpgcollege.com/president_message"
+          },
+          {
+            "title": "Hony. Secretary",
+            "url": "https://www.subodhpgcollege.com/secretary_message"
+          },
+          {
+            "title": "Convener College",
+            "url": "https://www.subodhpgcollege.com/convener_message"
+          },
+          {
+            "title": "Convener MCA Institute",
+            "url": "https://www.subodhpgcollege.com/convener_mca_message"
+          },
+          {
+            "title": "Principal's Desk",
+            "url": "https://www.subodhpgcollege.com/principal's_desk"
+          },
+          {
+            "title": "College At A Glance [Why Subodh]",
+            "url": "https://www.subodhpgcollege.com/aboutus"
+          },
+          {
+            "title": "Vision & Mission",
+            "url": "https://www.subodhpgcollege.com/vision_mission"
+          },
+          {
+            "title": "Affiliation/Accreditation/Recognition",
+            "url": "https://www.subodhpgcollege.com/RecognitionandAccreditation"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Knowledge Center (Central Library)",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Training & Placement Cell",
+            "url": "https://www.subodhpgcollege.com/tpo-cell"
+          },
+          {
+            "title": "MOUs & Collaborations",
+            "url": "https://www.subodhpgcollege.com/MOUs"
+          },
+          {
+            "title": "Support and Sustenance (Cells)",
+            "url": "https://www.subodhpgcollege.com/Campus_Cells"
+          },
+          {
+            "title": "Feedback Form",
+            "url": "https://www.subodhpgcollege.com/feedback_forms"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Admission",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Programs Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Apply Online (Session 2025-26)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Merit List 2025-26",
+            "url": "https://www.subodhpgcollege.com/Merit-List"
+          },
+          {
+            "title": "Class Wise Time-table",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "Admission News",
+            "url": "https://www.subodhpgcollege.com/admission_news"
+          },
+          {
+            "title": "Academic",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Undergraduate (UG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Postgraduate (PG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "Specialization Programs",
+            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+          },
+          {
+            "title": "Value Added Courses",
+            "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
+          },
+          {
+            "title": "Generic Elective Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
+          },
+          {
+            "title": "Skill Enhancement Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
+          },
+          {
+            "title": "Certification Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "Diploma Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "P.G. Diploma & Other",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "ISTEM Central Research Lab",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Best Practices",
+            "url": "https://www.subodhpgcollege.com/best_practices"
+          },
+          {
+            "title": "Academic Calendar 2018-2026",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Journals",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh News Letter",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Times",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "IQAC (NAAC)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Accreditation by NAAC [Certificate]",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "About IQAC",
+            "url": "https://www.subodhpgcollege.com/SubodhIQAC"
+          },
+          {
+            "title": "IQAC Committee, MOM & Action Taken Reports",
+            "url": "https://www.subodhpgcollege.com/minutes-of-IQAC"
+          },
+          {
+            "title": "AQAR (Annual Quality Assurance Report)",
+            "url": "https://www.subodhpgcollege.com/subodhaqar"
+          },
+          {
+            "title": "Examination Portal",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examination Time-table 2025",
+            "url": "https://www.subodhpgcollege.com/Time-table"
+          },
+          {
+            "title": "Assignments 2025",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
+            "title": "Fill CIA Awards/Marks (All UG/PG)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examinations Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Choice Based Credit System",
+            "url": "https://www.subodhpgcollege.com/CBCS"
+          },
+          {
+            "title": "Examination News & Notification",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Faculty/Staff Members",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "NEP 2020",
+            "url": "https://www.subodhpgcollege.com/NEP2020"
+          },
+          {
+            "title": "Gallery",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Activities & Events 2025-26",
+            "url": "https://www.subodhpgcollege.com/activities2025-26"
+          },
+          {
+            "title": "Activities & Events 2024-25",
+            "url": "https://www.subodhpgcollege.com/activities2025"
+          },
+          {
+            "title": "Activities & Events 2023-24",
+            "url": "https://www.subodhpgcollege.com/activities2023-24"
+          },
+          {
+            "title": "Activities & Events 2022-23",
+            "url": "https://www.subodhpgcollege.com/activities2022-23"
+          },
+          {
+            "title": "Upcoming Event 2025",
+            "url": "https://www.subodhpgcollege.com/event_news"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Campus Building",
+            "url": "https://www.subodhpgcollege.com/college-campus"
+          },
+          {
+            "title": "Library",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Laboratories",
+            "url": "https://www.subodhpgcollege.com/laboratories"
+          },
+          {
+            "title": "Smart Classroom",
+            "url": "https://www.subodhpgcollege.com/SmartClassRoom"
+          },
+          {
+            "title": "Indoor-Outdoor facility",
+            "url": "https://www.subodhpgcollege.com/indoor-outdoor-facility"
+          },
+          {
+            "title": "Front Desk (Reception)",
+            "url": "https://www.subodhpgcollege.com/Reception"
+          },
+          {
+            "title": "More Aminities",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Subodh In Sports (Gallery)",
+            "url": "https://www.subodhpgcollege.com/sports_gallery"
+          },
+          {
+            "title": "Subodh In NCC (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NCC_gallery"
+          },
+          {
+            "title": "Subodh In NSS (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NSS_gallery"
+          },
+          {
+            "title": "Subodh In Rovers (Gallery)",
+            "url": "https://www.subodhpgcollege.com/rovers-rangers"
+          },
+          {
+            "title": "Red Ribbon Club (Gallery)",
+            "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Scholarship",
+            "url": "https://www.subodhpgcollege.com/scholarships"
+          },
+          {
+            "title": "DBT FIST Scheme",
+            "url": "https://www.subodhpgcollege.com/DBT-FIST-SCHEME"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Contact Us",
+            "url": "https://www.subodhpgcollege.com/Contact_Us"
+          },
+          {
+            "title": "All News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Admission News",
+            "url": "https://www.subodhpgcollege.com/admission_news"
+          },
+          {
+            "title": "Examination News",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Result News",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Sports News",
+            "url": "https://www.subodhpgcollege.com/sports_news"
+          },
+          {
+            "title": "Event News",
+            "url": "https://www.subodhpgcollege.com/event_news"
+          },
+          {
+            "title": "Examinatiion Form",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examination Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Examination Time-table",
+            "url": "https://www.subodhpgcollege.com/time-table"
+          },
+          {
+            "title": "Class Time-table",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "Sections List",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "CIA Assignments",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
+            "title": "RollNo List",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Merit List",
+            "url": "https://www.subodhpgcollege.com/Merit-List"
+          },
+          {
+            "title": "Choice Based Credit System (CBCS)",
+            "url": "https://www.subodhpgcollege.com/CBCS"
+          },
+          {
+            "title": "admin@subodhpgcollege.com",
+            "url": "mailto:admin@subodhpgcollege.com"
+          },
+          {
+            "title": "Admissions",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "Programmes Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus UG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Syllabus PG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "Research Projects",
+            "url": "https://www.subodhpgcollege.com/Research-Projects"
+          },
+          {
+            "title": "Privacy Policy",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Terms & Conditions",
+            "url": "https://www.subodhpgcollege.com/"
+          }
+        ],
+        "error": false
       },
       "Departments": {
-        "pdfs": [],
-        "links": [],
-        "error": true
+        "pdfs": [
+          {
+            "title": "College Kulgeet",
+            "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
+          },
+          {
+            "title": "Fees Structure",
+            "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
+          },
+          {
+            "title": "Prospectus 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
+          },
+          {
+            "title": "Admission Process",
+            "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
+          },
+          {
+            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
+          },
+          {
+            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
+          },
+          {
+            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
+          },
+          {
+            "title": "Research in Subodh",
+            "url": "https://www.subodhpgcollege.com/pdf/research.pdf"
+          },
+          {
+            "title": "Central Lab Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Lab-Brochure.pdf"
+          },
+          {
+            "title": "Central Lab Facility",
+            "url": "https://www.subodhpgcollege.com/pdf/CRL/Central-Research-Lab-Facility.pdf"
+          },
+          {
+            "title": "Policies, SOP & Manuals",
+            "url": "https://www.subodhpgcollege.com/SSR-2024/INSTITUTIONAL_POLICIES_MANUALS.pdf"
+          },
+          {
+            "title": "Academic Committees",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic_Committees.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          },
+          {
+            "title": "Academic Calendar 2025-26",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2025-26.pdf"
+          },
+          {
+            "title": "Academic Calendar 2024-25",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2024-25.pdf"
+          },
+          {
+            "title": "Academic Calendar 2023-24",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar2023-24.pdf"
+          },
+          {
+            "title": "Academic Calendar 2022-23",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2022-23.pdf"
+          },
+          {
+            "title": "Academic Calendar 2021-22",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic Calender-2021-22.pdf"
+          },
+          {
+            "title": "Academic Calendar 2020-21",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2020-21.pdf"
+          },
+          {
+            "title": "Academic Calendar 2019-20",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2019-20.pdf"
+          },
+          {
+            "title": "Academic Calendar 2018-19",
+            "url": "https://www.subodhpgcollege.com/pdf/Academic-Calendar-2018-19.pdf"
+          },
+          {
+            "title": "June 2025",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_June_2025.pdf"
+          },
+          {
+            "title": "October 2024",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_October-2024.pdf"
+          },
+          {
+            "title": "November 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh_Newsletter_Nov_2023.pdf"
+          },
+          {
+            "title": "April 2023",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter_April 2023.pdf"
+          },
+          {
+            "title": "October 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-October-2022.pdf"
+          },
+          {
+            "title": "March 2022",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Newsletter-March-2022.pdf"
+          },
+          {
+            "title": "September 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-September2021.pdf"
+          },
+          {
+            "title": "March 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-March-2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh Newsletter July 2020.pdf"
+          },
+          {
+            "title": "February 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Feb-2020.pdf"
+          },
+          {
+            "title": "October 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/Subodh-Newsletter-Oct-2019.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2019.pdf"
+          },
+          {
+            "title": "January 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJanuaryl2019.pdf"
+          },
+          {
+            "title": "October 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterOctoberl2018.pdf"
+          },
+          {
+            "title": "April 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterApril2018.pdf"
+          },
+          {
+            "title": "january 2018",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/SubodhNewsLetterJan2018.pdf"
+          },
+          {
+            "title": "September 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterSept2017.pdf"
+          },
+          {
+            "title": "March 2017",
+            "url": "https://www.subodhpgcollege.com/pdf/Newsletter/NewsLetterMarch2017.pdf"
+          },
+          {
+            "title": "October 2021",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_October_2021.pdf"
+          },
+          {
+            "title": "July 2020",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_june_july_2020.pdf"
+          },
+          {
+            "title": "April 2019",
+            "url": "https://www.subodhpgcollege.com/pdf/SubodhTimes/Subodh_times_april_2019.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-IV",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-2024-Certificale-of-Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-III",
+            "url": "https://www.subodhpgcollege.com/pdf/NAAC-Certificate.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-II",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation.pdf"
+          },
+          {
+            "title": "NAAC Accreditation Cycle-I",
+            "url": "https://www.subodhpgcollege.com/pdf/NACC_Accreditation2004.pdf"
+          },
+          {
+            "title": "Self Study Report (SSR) for 4th Cycle",
+            "url": "https://www.subodhpgcollege.com/pdf/SS-Subodh-2024.pdf"
+          },
+          {
+            "title": "Examination Ordinance",
+            "url": "https://www.subodhpgcollege.com/pdf/Examination-Ordinance-2024.pdf"
+          },
+          {
+            "title": "Subodh in News",
+            "url": "https://www.subodhpgcollege.com/pdf/news&media.pdf"
+          },
+          {
+            "title": "ISO Certificate (21001:2018)",
+            "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "College Hand Book",
+            "url": "https://www.subodhpgcollege.com/pdf/Subodh-Hand-Book.pdf"
+          }
+        ],
+        "links": [
+          {
+            "title": "APPLY NEW ADMISSION 2025-26",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "SUBODH EXAMINATION PORTAL (ERP)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Governance & Legal",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti"
+          },
+          {
+            "title": "College Management Council",
+            "url": "https://www.subodhpgcollege.com/College_Management_Council"
+          },
+          {
+            "title": "College Governing Council",
+            "url": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College"
+          },
+          {
+            "title": "List of Institutions",
+            "url": "https://www.subodhpgcollege.com/List_of_Institutions"
+          },
+          {
+            "title": "Welcome Note (Our Visionaries)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "President",
+            "url": "https://www.subodhpgcollege.com/president_message"
+          },
+          {
+            "title": "Hony. Secretary",
+            "url": "https://www.subodhpgcollege.com/secretary_message"
+          },
+          {
+            "title": "Convener College",
+            "url": "https://www.subodhpgcollege.com/convener_message"
+          },
+          {
+            "title": "Convener MCA Institute",
+            "url": "https://www.subodhpgcollege.com/convener_mca_message"
+          },
+          {
+            "title": "Principal's Desk",
+            "url": "https://www.subodhpgcollege.com/principal's_desk"
+          },
+          {
+            "title": "College At A Glance [Why Subodh]",
+            "url": "https://www.subodhpgcollege.com/aboutus"
+          },
+          {
+            "title": "Vision & Mission",
+            "url": "https://www.subodhpgcollege.com/vision_mission"
+          },
+          {
+            "title": "Affiliation/Accreditation/Recognition",
+            "url": "https://www.subodhpgcollege.com/RecognitionandAccreditation"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Knowledge Center (Central Library)",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Training & Placement Cell",
+            "url": "https://www.subodhpgcollege.com/tpo-cell"
+          },
+          {
+            "title": "MOUs & Collaborations",
+            "url": "https://www.subodhpgcollege.com/MOUs"
+          },
+          {
+            "title": "Support and Sustenance (Cells)",
+            "url": "https://www.subodhpgcollege.com/Campus_Cells"
+          },
+          {
+            "title": "Feedback Form",
+            "url": "https://www.subodhpgcollege.com/feedback_forms"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Admission",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Programs Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Apply Online (Session 2025-26)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Merit List 2025-26",
+            "url": "https://www.subodhpgcollege.com/Merit-List"
+          },
+          {
+            "title": "Class Wise Time-table",
+            "url": "https://www.subodhpgcollege.com/Sections-Classes"
+          },
+          {
+            "title": "Admission News",
+            "url": "https://www.subodhpgcollege.com/admission_news"
+          },
+          {
+            "title": "Academic",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Undergraduate (UG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Postgraduate (PG) Programs",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "Specialization Programs",
+            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+          },
+          {
+            "title": "Value Added Courses",
+            "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
+          },
+          {
+            "title": "Generic Elective Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
+          },
+          {
+            "title": "Skill Enhancement Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
+          },
+          {
+            "title": "Certification Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "Diploma Courses",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "P.G. Diploma & Other",
+            "url": "https://www.subodhpgcollege.com/Career_oriented_courses"
+          },
+          {
+            "title": "ISTEM Central Research Lab",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Best Practices",
+            "url": "https://www.subodhpgcollege.com/best_practices"
+          },
+          {
+            "title": "Academic Calendar 2018-2026",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Journals",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh News Letter",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Subodh Times",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "IQAC (NAAC)",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Accreditation by NAAC [Certificate]",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "About IQAC",
+            "url": "https://www.subodhpgcollege.com/SubodhIQAC"
+          },
+          {
+            "title": "IQAC Committee, MOM & Action Taken Reports",
+            "url": "https://www.subodhpgcollege.com/minutes-of-IQAC"
+          },
+          {
+            "title": "AQAR (Annual Quality Assurance Report)",
+            "url": "https://www.subodhpgcollege.com/subodhaqar"
+          },
+          {
+            "title": "Examination Portal",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examination Time-table 2025",
+            "url": "https://www.subodhpgcollege.com/Time-table"
+          },
+          {
+            "title": "Assignments 2025",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
+            "title": "Fill CIA Awards/Marks (All UG/PG)",
+            "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Examinations Results",
+            "url": "https://www.subodhpgcollege.com/autonomous_courses_results"
+          },
+          {
+            "title": "Choice Based Credit System",
+            "url": "https://www.subodhpgcollege.com/CBCS"
+          },
+          {
+            "title": "Examination News & Notification",
+            "url": "https://www.subodhpgcollege.com/examination_news"
+          },
+          {
+            "title": "Faculty/Staff Members",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "NEP 2020",
+            "url": "https://www.subodhpgcollege.com/NEP2020"
+          },
+          {
+            "title": "Gallery",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Activities & Events 2025-26",
+            "url": "https://www.subodhpgcollege.com/activities2025-26"
+          },
+          {
+            "title": "Activities & Events 2024-25",
+            "url": "https://www.subodhpgcollege.com/activities2025"
+          },
+          {
+            "title": "Activities & Events 2023-24",
+            "url": "https://www.subodhpgcollege.com/activities2023-24"
+          },
+          {
+            "title": "Activities & Events 2022-23",
+            "url": "https://www.subodhpgcollege.com/activities2022-23"
+          },
+          {
+            "title": "Upcoming Event 2025",
+            "url": "https://www.subodhpgcollege.com/event_news"
+          },
+          {
+            "title": "Infrastructure",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Campus Building",
+            "url": "https://www.subodhpgcollege.com/college-campus"
+          },
+          {
+            "title": "Library",
+            "url": "https://www.subodhpgcollege.com/library"
+          },
+          {
+            "title": "Laboratories",
+            "url": "https://www.subodhpgcollege.com/laboratories"
+          },
+          {
+            "title": "Smart Classroom",
+            "url": "https://www.subodhpgcollege.com/SmartClassRoom"
+          },
+          {
+            "title": "Indoor-Outdoor facility",
+            "url": "https://www.subodhpgcollege.com/indoor-outdoor-facility"
+          },
+          {
+            "title": "Front Desk (Reception)",
+            "url": "https://www.subodhpgcollege.com/Reception"
+          },
+          {
+            "title": "More Aminities",
+            "url": "https://www.subodhpgcollege.com/infrastructure"
+          },
+          {
+            "title": "Subodh In Sports (Gallery)",
+            "url": "https://www.subodhpgcollege.com/sports_gallery"
+          },
+          {
+            "title": "Subodh In NCC (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NCC_gallery"
+          },
+          {
+            "title": "Subodh In NSS (Gallery)",
+            "url": "https://www.subodhpgcollege.com/NSS_gallery"
+          },
+          {
+            "title": "Subodh In Rovers (Gallery)",
+            "url": "https://www.subodhpgcollege.com/rovers-rangers"
+          },
+          {
+            "title": "Red Ribbon Club (Gallery)",
+            "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Scholarship",
+            "url": "https://www.subodhpgcollege.com/scholarships"
+          },
+          {
+            "title": "DBT FIST Scheme",
+            "url": "https://www.subodhpgcollege.com/DBT-FIST-SCHEME"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "News & Notifications",
+            "url": "https://www.subodhpgcollege.com/notice_board"
+          },
+          {
+            "title": "Contact Us",
+            "url": "https://www.subodhpgcollege.com/Contact_Us"
+          },
+          {
+            "title": "admin@subodhpgcollege.com",
+            "url": "mailto:admin@subodhpgcollege.com"
+          },
+          {
+            "title": "Admissions",
+            "url": "https://www.subodhpgcollege.com/admissions"
+          },
+          {
+            "title": "Programmes Offered",
+            "url": "https://www.subodhpgcollege.com/programmes-offered"
+          },
+          {
+            "title": "Departments",
+            "url": "https://www.subodhpgcollege.com/departments"
+          },
+          {
+            "title": "Syllabus UG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_UG_Courses"
+          },
+          {
+            "title": "Syllabus PG Courses",
+            "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
+          },
+          {
+            "title": "RTI Disclaimer",
+            "url": "https://www.subodhpgcollege.com/RTIDisclaimer.aspx"
+          },
+          {
+            "title": "Research Projects",
+            "url": "https://www.subodhpgcollege.com/Research-Projects"
+          },
+          {
+            "title": "Privacy Policy",
+            "url": "https://www.subodhpgcollege.com/"
+          },
+          {
+            "title": "Terms & Conditions",
+            "url": "https://www.subodhpgcollege.com/"
+          }
+        ],
+        "error": false
       }
     }
   }

@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-01-06 04:04:18"
+      "scraped_at": "2026-01-07 04:04:59"
     },
     "sections": {
       "Latest_Updates": [
@@ -2001,6 +2001,10 @@
           {
             "title": "ISO Certificate (21001:2018)",
             "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "Download Brochure",
+            "url": "https://www.subodhpgcollege.com/pdf/upload/2026/NSFeb5-6-2026.pdf"
           },
           {
             "title": "Download Brochure",

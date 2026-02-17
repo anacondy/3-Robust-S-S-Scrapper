@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-02-16 05:05:19"
+      "scraped_at": "2026-02-17 04:58:34"
     },
     "sections": {
       "Latest_Updates": [
@@ -969,10 +969,6 @@
           },
           {
             "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Mathematics_ThreeYr_NEP_2025-26.pdf"
-          },
-          {
-            "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_ComputerSci_NEP_2025-26.pdf"
           },
           {
@@ -1234,6 +1230,10 @@
           {
             "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BSc-Economics-2022-23.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Syllabus-BSc-Maths-2022-23.pdf"
           },
           {
             "title": "Download PDF",

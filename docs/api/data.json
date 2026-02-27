@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-02-26 04:56:06"
+      "scraped_at": "2026-02-27 04:50:02"
     },
     "sections": {
       "Latest_Updates": [
@@ -515,16 +515,16 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
-            "title": "Examination Time-table 2025",
-            "url": "https://www.subodhpgcollege.com/Time-table"
-          },
-          {
             "title": "Assignments 2026",
             "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "CIA Syllabus 2026",
             "url": "https://www.subodhpgcollege.com/cia-syllabus"
+          },
+          {
+            "title": "CIA Time-table March 2026",
+            "url": "https://www.subodhpgcollege.com/Time-table"
           },
           {
             "title": "Fill CIA Awards/Marks (All UG/PG)",
@@ -1634,16 +1634,16 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
-            "title": "Examination Time-table 2025",
-            "url": "https://www.subodhpgcollege.com/Time-table"
-          },
-          {
             "title": "Assignments 2026",
             "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "CIA Syllabus 2026",
             "url": "https://www.subodhpgcollege.com/cia-syllabus"
+          },
+          {
+            "title": "CIA Time-table March 2026",
+            "url": "https://www.subodhpgcollege.com/Time-table"
           },
           {
             "title": "Fill CIA Awards/Marks (All UG/PG)",
@@ -2241,16 +2241,16 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
-            "title": "Examination Time-table 2025",
-            "url": "https://www.subodhpgcollege.com/Time-table"
-          },
-          {
             "title": "Assignments 2026",
             "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "CIA Syllabus 2026",
             "url": "https://www.subodhpgcollege.com/cia-syllabus"
+          },
+          {
+            "title": "CIA Time-table March 2026",
+            "url": "https://www.subodhpgcollege.com/Time-table"
           },
           {
             "title": "Fill CIA Awards/Marks (All UG/PG)",
@@ -2900,16 +2900,16 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
-            "title": "Examination Time-table 2025",
-            "url": "https://www.subodhpgcollege.com/Time-table"
-          },
-          {
             "title": "Assignments 2026",
             "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "CIA Syllabus 2026",
             "url": "https://www.subodhpgcollege.com/cia-syllabus"
+          },
+          {
+            "title": "CIA Time-table March 2026",
+            "url": "https://www.subodhpgcollege.com/Time-table"
           },
           {
             "title": "Fill CIA Awards/Marks (All UG/PG)",

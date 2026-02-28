@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-02-27 04:50:02"
+      "scraped_at": "2026-02-28 04:19:22"
     },
     "sections": {
       "Latest_Updates": [
@@ -2009,6 +2009,10 @@
           {
             "title": "ISO Certificate (21001:2018)",
             "url": "https://www.subodhpgcollege.com/pdf/ISO-Certificate.pdf"
+          },
+          {
+            "title": "View/Download",
+            "url": "https://www.subodhpgcollege.com/pdf/upload/2026/science-day-2026.pdf"
           },
           {
             "title": "Download Brochure",

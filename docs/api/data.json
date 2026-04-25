@@ -2,10 +2,86 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-04-24 05:40:22"
+      "scraped_at": "2026-04-25 05:19:03"
     },
     "sections": {
-      "Latest_Updates": [],
+      "Latest_Updates": [
+        {
+          "text": "APPLY NEW ADMISSION 2026-27",
+          "link": "https://www.subodhpgcollege.com/admissions",
+          "is_new": false
+        },
+        {
+          "text": "SUBODH EXAMINATION PORTAL (ERP)",
+          "link": "https://www.subodhpgcollege.com/subodhexaminationportal",
+          "is_new": false
+        },
+        {
+          "text": "AboutGovernance & LegalGoverning CouncilCollege Management CouncilCollege Governing CouncilList of InstitutionsWelcome Note (Our Visionaries)PresidentHony. SecretaryConvener CollegeConvener MCA InstitutePrincipal's DeskCollege At A Glance [Why Subodh]Vision & MissionAffiliation/Accreditation/RecognitionInfrastructureKnowledge Center (Central Library)Training & Placement CellMOUs & CollaborationsSupport and Sustenance (Cells)Feedback FormDBT-Star College SchemeCollege KulgeetNews & Notifications",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Governance & LegalGoverning CouncilCollege Management CouncilCollege Governing CouncilList of Institutions",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Governing Council",
+          "link": "https://www.subodhpgcollege.com/Governing_Council_Shiksha_Samiti",
+          "is_new": false
+        },
+        {
+          "text": "College Management Council",
+          "link": "https://www.subodhpgcollege.com/College_Management_Council",
+          "is_new": false
+        },
+        {
+          "text": "College Governing Council",
+          "link": "https://www.subodhpgcollege.com/Governing_Council_Autonomous_College",
+          "is_new": false
+        },
+        {
+          "text": "List of Institutions",
+          "link": "https://www.subodhpgcollege.com/List_of_Institutions",
+          "is_new": false
+        },
+        {
+          "text": "Welcome Note (Our Visionaries)PresidentHony. SecretaryConvener CollegeConvener MCA InstitutePrincipal's Desk",
+          "link": "https://www.subodhpgcollege.com/",
+          "is_new": false
+        },
+        {
+          "text": "Hony. Secretary",
+          "link": "https://www.subodhpgcollege.com/secretary_message",
+          "is_new": false
+        },
+        {
+          "text": "Convener College",
+          "link": "https://www.subodhpgcollege.com/convener_message",
+          "is_new": false
+        },
+        {
+          "text": "Convener MCA Institute",
+          "link": "https://www.subodhpgcollege.com/convener_mca_message",
+          "is_new": false
+        },
+        {
+          "text": "Principal's Desk",
+          "link": "https://www.subodhpgcollege.com/principal's_desk",
+          "is_new": false
+        },
+        {
+          "text": "College At A Glance [Why Subodh]",
+          "link": "https://www.subodhpgcollege.com/aboutus",
+          "is_new": false
+        },
+        {
+          "text": "Vision & Mission",
+          "link": "https://www.subodhpgcollege.com/vision_mission",
+          "is_new": false
+        }
+      ],
       "Exam Notices": {
         "pdfs": [
           {
@@ -13,11 +89,11 @@
             "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
           },
           {
-            "title": "Fees Structure",
+            "title": "Fees Structure 2026-27",
             "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
           },
           {
-            "title": "Prospectus 2025-26",
+            "title": "Prospectus",
             "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
           },
           {
@@ -331,10 +407,6 @@
             "url": "https://www.subodhpgcollege.com/Merit-List"
           },
           {
-            "title": "Class Wise Time-table",
-            "url": "https://www.subodhpgcollege.com/Sections-Classes"
-          },
-          {
             "title": "Admission News",
             "url": "https://www.subodhpgcollege.com/admission_news"
           },
@@ -640,11 +712,11 @@
             "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
           },
           {
-            "title": "Fees Structure",
+            "title": "Fees Structure 2026-27",
             "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
           },
           {
-            "title": "Prospectus 2025-26",
+            "title": "Prospectus",
             "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
           },
           {
@@ -1450,10 +1522,6 @@
             "url": "https://www.subodhpgcollege.com/Merit-List"
           },
           {
-            "title": "Class Wise Time-table",
-            "url": "https://www.subodhpgcollege.com/Sections-Classes"
-          },
-          {
             "title": "Admission News",
             "url": "https://www.subodhpgcollege.com/admission_news"
           },
@@ -1739,11 +1807,11 @@
             "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
           },
           {
-            "title": "Fees Structure",
+            "title": "Fees Structure 2026-27",
             "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
           },
           {
-            "title": "Prospectus 2025-26",
+            "title": "Prospectus",
             "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
           },
           {
@@ -2059,10 +2127,6 @@
           {
             "title": "Merit List 2026-27",
             "url": "https://www.subodhpgcollege.com/Merit-List"
-          },
-          {
-            "title": "Class Wise Time-table",
-            "url": "https://www.subodhpgcollege.com/Sections-Classes"
           },
           {
             "title": "Admission News",
@@ -2410,11 +2474,11 @@
             "url": "https://www.subodhpgcollege.com/pdf/College-Kulgeet.pdf"
           },
           {
-            "title": "Fees Structure",
+            "title": "Fees Structure 2026-27",
             "url": "https://www.subodhpgcollege.com/pdf/FEE-SCHEDULE-2025-26.pdf"
           },
           {
-            "title": "Prospectus 2025-26",
+            "title": "Prospectus",
             "url": "https://www.subodhpgcollege.com/pdf/Subodh-Prospectus-2025-26.pdf"
           },
           {
@@ -2718,10 +2782,6 @@
           {
             "title": "Merit List 2026-27",
             "url": "https://www.subodhpgcollege.com/Merit-List"
-          },
-          {
-            "title": "Class Wise Time-table",
-            "url": "https://www.subodhpgcollege.com/Sections-Classes"
           },
           {
             "title": "Admission News",

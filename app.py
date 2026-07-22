@@ -181,4 +181,4 @@ if __name__ == "__main__":
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     print("Server is running. Open http://127.0.0.1:5000 in your browser.")
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5001)

@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-09-23 08:26:09"
+      "scraped_at": "2026-09-24 08:18:33"
     },
     "sections": {
       "Latest_Updates": [
@@ -523,6 +523,10 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
+            "title": "Assignments 2026",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
             "title": "Examination Time-table",
             "url": "https://www.subodhpgcollege.com/Time-table"
           },
@@ -961,7 +965,7 @@
           },
           {
             "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Microbiology_NEP_2025-26.pdf"
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Microbiology_NEP_2025-28.pdf"
           },
           {
             "title": "Download PDF",
@@ -1646,6 +1650,10 @@
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
           },
           {
+            "title": "Assignments 2026",
+            "url": "https://www.subodhpgcollege.com/assignments"
+          },
+          {
             "title": "Examination Time-table",
             "url": "https://www.subodhpgcollege.com/Time-table"
           },
@@ -2247,6 +2255,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Assignments 2026",
+            "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "Examination Time-table",
@@ -2898,6 +2910,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Assignments 2026",
+            "url": "https://www.subodhpgcollege.com/assignments"
           },
           {
             "title": "Examination Time-table",

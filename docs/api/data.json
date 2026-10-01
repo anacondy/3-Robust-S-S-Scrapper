@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-09-30 09:30:53"
+      "scraped_at": "2026-10-01 09:57:53"
     },
     "sections": {
       "Latest_Updates": [
@@ -933,6 +933,14 @@
           },
           {
             "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/MDC-Botany-2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/GEC/syllabus_GEC_HISTORICAL-EVOLUTION-OF-INDIAN-SOCIETY-2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_ABST_NEP_2025-26.pdf"
           },
           {
@@ -942,6 +950,10 @@
           {
             "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_bcom_EAFM_NEP_2025-26.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_Botany_NEP_2026-27.pdf"
           },
           {
             "title": "Download PDF",

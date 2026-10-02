@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-10-01 09:57:53"
+      "scraped_at": "2026-10-02 09:33:47"
     },
     "sections": {
       "Latest_Updates": [
@@ -99,18 +99,6 @@
           {
             "title": "Admission Process",
             "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
-          },
-          {
-            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
-          },
-          {
-            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
-          },
-          {
-            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
           },
           {
             "title": "Research in Subodh",
@@ -443,19 +431,19 @@
             "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
           },
           {
-            "title": "Specialization Programs",
-            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+            "title": "Multidisciplinary Courses (MDC)",
+            "url": "https://www.subodhpgcollege.com/MDC-Multidisciplinary-Courses"
           },
           {
-            "title": "Value Added Courses",
+            "title": "Value Added Courses (VAC)",
             "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
           },
           {
-            "title": "Generic Elective Courses",
+            "title": "Generic Elective Courses (GEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
           },
           {
-            "title": "Skill Enhancement Courses",
+            "title": "Skill Enhancement Courses (SEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
           },
           {
@@ -521,6 +509,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Roll list for Session 2026-27",
+            "url": "https://www.subodhpgcollege.com/RollNoList"
           },
           {
             "title": "Assignments 2026",
@@ -724,18 +716,6 @@
             "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
           },
           {
-            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
-          },
-          {
-            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
-          },
-          {
-            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
-          },
-          {
             "title": "Research in Subodh",
             "url": "https://www.subodhpgcollege.com/pdf/research.pdf"
           },
@@ -918,26 +898,6 @@
           {
             "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_SEC_Foundation_of_English_language_New_NEP_2025-26.pdf"
-          },
-          {
-            "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Maths_MDM(Multidisciplinary).pdf"
-          },
-          {
-            "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/BAdm_MDM(Multidisciplinary)-2025-26.pdf"
-          },
-          {
-            "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/Psychology_MDM(Multidisciplinary)-2026-27.pdf"
-          },
-          {
-            "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/MDC-Botany-2025-26.pdf"
-          },
-          {
-            "title": "Download PDF",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/GEC/syllabus_GEC_HISTORICAL-EVOLUTION-OF-INDIAN-SOCIETY-2025-26.pdf"
           },
           {
             "title": "Download PDF",
@@ -1582,19 +1542,19 @@
             "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
           },
           {
-            "title": "Specialization Programs",
-            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+            "title": "Multidisciplinary Courses (MDC)",
+            "url": "https://www.subodhpgcollege.com/MDC-Multidisciplinary-Courses"
           },
           {
-            "title": "Value Added Courses",
+            "title": "Value Added Courses (VAC)",
             "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
           },
           {
-            "title": "Generic Elective Courses",
+            "title": "Generic Elective Courses (GEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
           },
           {
-            "title": "Skill Enhancement Courses",
+            "title": "Skill Enhancement Courses (SEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
           },
           {
@@ -1660,6 +1620,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Roll list for Session 2026-27",
+            "url": "https://www.subodhpgcollege.com/RollNoList"
           },
           {
             "title": "Assignments 2026",
@@ -1841,18 +1805,6 @@
           {
             "title": "Admission Process",
             "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
-          },
-          {
-            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
-          },
-          {
-            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
-          },
-          {
-            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
           },
           {
             "title": "Research in Subodh",
@@ -2189,19 +2141,19 @@
             "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
           },
           {
-            "title": "Specialization Programs",
-            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+            "title": "Multidisciplinary Courses (MDC)",
+            "url": "https://www.subodhpgcollege.com/MDC-Multidisciplinary-Courses"
           },
           {
-            "title": "Value Added Courses",
+            "title": "Value Added Courses (VAC)",
             "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
           },
           {
-            "title": "Generic Elective Courses",
+            "title": "Generic Elective Courses (GEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
           },
           {
-            "title": "Skill Enhancement Courses",
+            "title": "Skill Enhancement Courses (SEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
           },
           {
@@ -2267,6 +2219,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Roll list for Session 2026-27",
+            "url": "https://www.subodhpgcollege.com/RollNoList"
           },
           {
             "title": "Assignments 2026",
@@ -2508,18 +2464,6 @@
           {
             "title": "Admission Process",
             "url": "https://www.subodhpgcollege.com/pdf/Admission-Process.pdf"
-          },
-          {
-            "title": "U.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)i.pdf"
-          },
-          {
-            "title": "P.G. Courses 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)iii.pdf"
-          },
-          {
-            "title": "U.G. Honours 2022-23 (POs, PSOs, COs)",
-            "url": "https://www.subodhpgcollege.com/pdf/syllabus/2.6.1(b)ii.pdf"
           },
           {
             "title": "Research in Subodh",
@@ -2844,19 +2788,19 @@
             "url": "https://www.subodhpgcollege.com/Syllabus_PG_Courses"
           },
           {
-            "title": "Specialization Programs",
-            "url": "https://www.subodhpgcollege.com/syllabus-specializations-courses"
+            "title": "Multidisciplinary Courses (MDC)",
+            "url": "https://www.subodhpgcollege.com/MDC-Multidisciplinary-Courses"
           },
           {
-            "title": "Value Added Courses",
+            "title": "Value Added Courses (VAC)",
             "url": "https://www.subodhpgcollege.com/Value_Added_Courses"
           },
           {
-            "title": "Generic Elective Courses",
+            "title": "Generic Elective Courses (GEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_Generic_Elective_Courses"
           },
           {
-            "title": "Skill Enhancement Courses",
+            "title": "Skill Enhancement Courses (SEC)",
             "url": "https://www.subodhpgcollege.com/Syllabus_skill-enhancement-courses"
           },
           {
@@ -2922,6 +2866,10 @@
           {
             "title": "Examination Portal",
             "url": "https://www.subodhpgcollege.com/subodhexaminationportal"
+          },
+          {
+            "title": "Roll list for Session 2026-27",
+            "url": "https://www.subodhpgcollege.com/RollNoList"
           },
           {
             "title": "Assignments 2026",

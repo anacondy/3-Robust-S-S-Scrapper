@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "meta": {
-      "scraped_at": "2026-10-03 09:00:39"
+      "scraped_at": "2026-10-04 09:34:01"
     },
     "sections": {
       "Latest_Updates": [
@@ -615,6 +615,14 @@
             "url": "https://www.subodhpgcollege.com/red-ribbon-club"
           },
           {
+            "title": "Jobs & Career",
+            "url": "https://www.subodhpgcollege.com/jobs-career"
+          },
+          {
+            "title": "Tenders",
+            "url": "https://www.subodhpgcollege.com/Tenders"
+          },
+          {
             "title": "Scholarship",
             "url": "https://www.subodhpgcollege.com/scholarships"
           },
@@ -1086,6 +1094,10 @@
           {
             "title": "Download PDF",
             "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_UG_zoology_2023-24.pdf"
+          },
+          {
+            "title": "Download PDF",
+            "url": "https://www.subodhpgcollege.com/pdf/syllabus/syllabus_BSc_botany_Oct2023.pdf"
           },
           {
             "title": "Download PDF",
@@ -1726,6 +1738,14 @@
             "url": "https://www.subodhpgcollege.com/red-ribbon-club"
           },
           {
+            "title": "Jobs & Career",
+            "url": "https://www.subodhpgcollege.com/jobs-career"
+          },
+          {
+            "title": "Tenders",
+            "url": "https://www.subodhpgcollege.com/Tenders"
+          },
+          {
             "title": "Scholarship",
             "url": "https://www.subodhpgcollege.com/scholarships"
           },
@@ -2323,6 +2343,14 @@
           {
             "title": "Red Ribbon Club (Gallery)",
             "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Jobs & Career",
+            "url": "https://www.subodhpgcollege.com/jobs-career"
+          },
+          {
+            "title": "Tenders",
+            "url": "https://www.subodhpgcollege.com/Tenders"
           },
           {
             "title": "Scholarship",
@@ -2970,6 +2998,14 @@
           {
             "title": "Red Ribbon Club (Gallery)",
             "url": "https://www.subodhpgcollege.com/red-ribbon-club"
+          },
+          {
+            "title": "Jobs & Career",
+            "url": "https://www.subodhpgcollege.com/jobs-career"
+          },
+          {
+            "title": "Tenders",
+            "url": "https://www.subodhpgcollege.com/Tenders"
           },
           {
             "title": "Scholarship",
